@@ -1,0 +1,2 @@
+sudo dnf install qgis python3-qgis qgis-grass qgis-server
+

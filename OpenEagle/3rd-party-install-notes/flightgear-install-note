@@ -1,0 +1,2 @@
+sudo dnf install FlightGear
+sudo dnf install FlightGear-data

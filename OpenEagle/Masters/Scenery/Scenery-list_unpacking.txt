@@ -1,0 +1,40 @@
+From flighgear.org See downloading scenery under downloads.
+Download the following list of .tgz files and copy and paste them in
+this directory, run the script:
+Scenery-list_unpacking.sh
+Note, make sure the script file property is set to executable.
+
+Here is the list:
+e140n10.tgz
+e160n00.tgz
+w010n00.tgz
+w020n00.tgz
+w030n10.tgz
+w060n10.tgz
+w060n40.tgz
+w060n50.tgz
+w070n10.tgz
+w070n30.tgz
+w070n40.tgz
+w080n20.tgz
+w080n30.tgz
+w080n40.tgz
+w090n20.tgz
+w090n30.tgz
+w090n40.tgz
+w100n20.tgz
+w100n30.tgz
+w100n40.tgz
+w110n20.tgz
+w110n30.tgz
+w110n40.tgz
+w120n20.tgz
+w120n30.tgz
+w120n40.tgz
+w130n30.tgz
+w130n40.tgz
+w140n50.tgz
+w150n50.tgz
+w150n60.tgz
+w150n70.tgz
+

@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic> 
+  <input>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    Garmin G5                      -->    
+    <!-- TIME -->
+    <chunk>
+      <name>G5UTCyear</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-year</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCmonth</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-month</node>
+    </chunk>      
+    <chunk>
+      <name>G5UTCday</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-day</node>
+    </chunk>
+    <chunk>
+      <name>G5UTChour</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-hour</node>
+    </chunk>  
+    <chunk>
+      <name>G5UTCminute</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-minute</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCsecond</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-second</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCsecond-fraction</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-second-fraction</node>
+    </chunk>
+    <!-- ORIENTATION -->
+    <chunk>
+      <name>G5 Pitch degree</name>
+      <type>double</type>
+      <node>/orientation/pitch-deg</node>
+    </chunk>     
+    <chunk>
+      <name>G5 Roll degree</name>
+      <type>double</type>
+      <node>/orientation/roll-deg</node>
+    </chunk>
+    <!-- SPEEDS -->
+    <chunk>
+      <name>G5 Airspeed knots</name>
+      <type>double</type>
+      <node>/velocities/airspeed-kt</node>
+    </chunk> 
+    <!-- PRESSURE ALTITUDE -->   
+    <chunk>
+      <name>G5 Pressure Altitude Ft</name>
+      <type>double</type>
+      <node>/instrumentation/altimeter/pressure-alt-ft</node>
+    </chunk> 
+    <!-- RATE OF TURN -->    
+    <chunk>
+      <name>G5 Yaw Rate DPS</name>
+      <type>double</type>
+      <node>/OpenEagle/yaw/yaw_rate_dps</node>
+    </chunk>  
+    <!-- ACCELERATION -->
+    <chunk>
+      <name>G5 Lateral Acceleration</name>
+      <type>double</type>
+      <node>/OpenEagle/acceleration/lateral_acc_g</node>
+    </chunk>  
+    <chunk>
+      <name>G5 Vertical Acceleration</name>
+      <type>double</type>
+      <node>/OpenEagle/acceleration/vertical_acc_g</node>
+    </chunk> 
+    <!-- VERTICAL_SPEED_FPM -->   
+    <chunk>
+      <name>G5 Vertical Speed FPM</name>
+      <type>double</type>
+      <node>/OpenEagle/vertical_speed_fpm</node>
+    </chunk> 
+    <!--ALTIMETER SETTING INHG -->    
+    <chunk>
+     <name>G5 Altimeter Setting inHg</name>
+      <type>double</type>
+      <node>/instrumentation/altimeter/setting-inhg</node>
+    </chunk>
+    <!--                        D5 GPS                      -->
+    <!-- D5 GPS LATITUDE -->  
+    <chunk>
+      <name>D5 GPS latitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/latitude</node>
+    </chunk>    
+    <!-- D5 GPS LONGITUDE -->
+    <chunk>
+      <name>D5 GPS longitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/longitude</node>
+    </chunk>
+    <!-- D5 GPS POSITION STATUS -->
+    <chunk>
+      <name>D5 GPS position status</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPSposition_status</node>
+    </chunk> 
+    <!-- D5 GPS HORIZONTAL POSITION ERROR -->     
+    <chunk>
+      <name>D5 GPS horizontal position error</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPShorizontal_position_error_ft</node>
+    </chunk>
+    <!-- D5 GPS ALTITUDE -->    
+    <chunk>
+      <name>D5 GPS Altitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/altitude_ft</node>
+    </chunk>
+    <!-- D5 GPS EAST WEST VELOCITY -->    
+    <chunk>
+      <name>D5 GPS East West Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/east_west_velocity_ft</node>
+    </chunk>  
+    <!-- D5 GPS NORTH SOUTH VELOCITY --> 
+    <chunk>
+      <name>D5 GPS North South Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/north_south_velocity_fps</node>
+    </chunk>
+    <!-- D5 GPS VERTICAL VELOCITY  -->    
+    <chunk>
+      <name>D5 GPS Vertical Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/vertical_velocity_fps</node>
+    </chunk>
+    <!--                    Arduino GPS                          -->
+    <!-- GPS LATITUDE -->
+    <chunk>
+      <name>GPS Latitude degree</name>
+      <type>double</type>
+      <node>/position/latitude-deg</node>
+    </chunk>
+    <!-- GPS LONGITUDE -->
+    <chunk>
+      <name>GPS Longitude degree</name>
+      <type>double</type>
+      <node>/position/longitude-deg</node>
+    </chunk>  
+    <!-- GPS GROUNDSPEED -->    
+    <chunk>
+      <name>Groundspeed knots</name>
+      <type>double</type>
+      <node>/velocities/groundspeed-kt</node>
+    </chunk>
+    <!-- GPS TRUE HEADING -->
+    <chunk>
+      <name>GPS True Heading degree</name>
+      <type>double</type>
+      <node>/orientation/true-heading-deg</node>
+    </chunk> 
+    <!--                    Arduino ENGINE MONITOR              -->
+    <chunk>
+     <name>EM Fuel Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/fuel-pressure-psi</node>
+    </chunk>    
+    <chunk>
+     <name>EM Oil Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-pressure-psi</node>
+    </chunk>    
+    <chunk>
+     <name>EM Oil Temp Deg. F</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-temperature-degf</node>
+    </chunk>    
+    <chunk>
+     <name>EM Cyliner Head Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/cht0-degf</node>
+    </chunk>   
+    <chunk>
+     <name>EMExhaust Gas Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/egt0-degf</node>
+    </chunk> 
+    <!--                   derived/calculated                     -->    
+    <chunk>
+      <name>COMPAltitude ft</name>
+      <type>double</type>
+      <node>/position/altitude-ft</node>
+    </chunk>          
+    <chunk>
+      <name>COMPSpeed Down FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-down-fps</node>
+    </chunk>                  
+    <chunk>
+      <name>COMPSpeed East FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-east-fps</node>
+    </chunk>
+    <chunk>
+      <name>COMPSpeed North FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-north-fps</node>
+    </chunk> 
+    <!--                   Extended Data                      -->      
+    <chunk>
+      <name>Density Altitude ft</name>
+      <type>double</type>
+      <node>/OpenEagle/altitude/density-altitude</node>
+    </chunk>                                     
+    <chunk>
+      <name>True Airspeed knots</name>
+      <type>double</type>
+      <node>/OpenEagle/airspeed/true-airspeed</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 First Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/first_prefix</node>
+    </chunk>   
+    <chunk>
+      <name>CRM114 Second Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/second_prefix</node>
+    </chunk>  
+    <chunk>
+      <name>CRM114 Third Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/third_prefix</node>
+    </chunk>  
+    <!-- weight and balance -->
+    <chunk>
+      <name>crew_wt</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/crew_wt</node>
+    </chunk>  
+    <chunk>
+      <name>baggage_wt</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/baggage_wt</node>
+    </chunk>
+    <chunk>
+      <name>fuel gallons</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/fuel_gallons</node>
+    </chunk>
+    <chunk>
+      <name>Engine RPM</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/RPM</node>
+    </chunk> 
+    <chunk>
+      <name>Engine manifold-pressure-inhg</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/manifold-pressure-inhg</node>
+    </chunk> 
+    <chunk>
+      <name>Engine fuel-flow-gph</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/fuel-flow-gph</node>
+    </chunk>
+    <chunk>
+      <name>Temperatue outside-air-temp-degf</name>
+      <type>double</type>
+      <node>/OpenEagle/temperature/outside-air-temp-degf</node>
+    </chunk> 
+    <chunk>
+      <name>Flap Setting</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/flap_setting</node>
+    </chunk>     
+    <chunk>
+      <name>Cowl Flap Opening inches</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/opening</node>
+    </chunk>
+  </input>
+   
+  <output>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>
+    <binary_footer>none</binary_footer>
+    <!--                    Garmin G5                      -->
+    <!-- TIME -->
+    <chunk>
+      <name>G5UTCyear</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-year</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCmonth</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-month</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCday</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-day</node>
+    </chunk>
+    <chunk>
+      <name>G5UTChour</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-hour</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCminute</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-minute</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCsecond</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-second</node>
+    </chunk>
+    <chunk>
+      <name>G5UTCsecond-fraction</name>
+      <type>double</type>
+      <node>/OpenEagle/time/G5/utc-second-fraction</node>
+    </chunk>
+    <!-- ORIENTATION -->
+    <chunk>
+      <name>G5 Pitch degree</name>
+      <type>double</type>
+      <node>/orientation/pitch-deg</node>
+    </chunk>
+    <chunk>
+      <name>G5 Roll degree</name>
+      <type>double</type>
+      <node>/orientation/roll-deg</node>
+    </chunk>
+    <!-- SPEEDS -->
+    <chunk>
+      <name>G5 Airspeed knots</name>
+      <type>double</type>
+      <node>/velocities/airspeed-kt</node>
+    </chunk>
+    <!-- PRESSURE ALTITUDE -->
+    <chunk>
+      <name>G5 Pressure Altitude Ft</name>
+      <type>double</type>
+      <node>/instrumentation/altimeter/pressure-alt-ft</node>
+    </chunk>
+    <!-- RATE OF TURN -->
+    <chunk>
+      <name>G5 Yaw Rate DPS</name>
+      <type>double</type>
+      <node>/OpenEagle/yaw/yaw_rate_dps</node>
+    </chunk>
+    <!-- ACCELERATION -->
+    <chunk>
+      <name>G5 Lateral Acceleration</name>
+      <type>double</type>
+      <node>/OpenEagle/acceleration/lateral_acc_g</node>
+    </chunk>
+    <chunk>
+      <name>G5 Vertical Acceleration</name>
+      <type>double</type>
+      <node>/OpenEagle/acceleration/vertical_acc_g</node>
+    </chunk>
+    <!-- VERTICAL_SPEED_FPM -->
+    <chunk>
+      <name>G5 Vertical Speed FPM</name>
+      <type>double</type>
+      <node>/OpenEagle/vertical_speed_fpm</node>
+    </chunk>
+    <!--ALTIMETER SETTING INHG -->
+    <chunk>
+     <name>G5 Altimeter Setting inHg</name>
+      <type>double</type>
+      <node>/instrumentation/altimeter/setting-inhg</node>
+    </chunk>
+    <!--                        D5 GPS                      -->
+    <!-- D5 GPS LATITUDE -->
+    <chunk>
+      <name>D5 GPS latitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/latitude</node>
+    </chunk>
+    <!-- D5 GPS LONGITUDE -->
+    <chunk>
+      <name>D5 GPS longitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/longitude</node>
+    </chunk>
+    <!-- D5 GPS POSITION STATUS -->
+    <chunk>
+      <name>D5 GPS position status</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPSposition_status</node>
+    </chunk>
+    <!-- D5 GPS HORIZONTAL POSITION ERROR -->
+    <chunk>
+      <name>D5 GPS horizontal position error</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPShorizontal_position_error_ft</node>
+    </chunk>
+    <!-- D5 GPS ALTITUDE -->
+    <chunk>
+      <name>D5 GPS Altitude</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/altitude_ft</node>
+    </chunk>
+    <!-- D5 GPS EAST WEST VELOCITY -->
+    <chunk>
+      <name>D5 GPS East West Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/east_west_velocity_ft</node>
+    </chunk>
+    <!-- D5 GPS NORTH SOUTH VELOCITY -->
+    <chunk>
+      <name>D5 GPS North South Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/north_south_velocity_fps</node>
+    </chunk>
+    <!-- D5 GPS VERTICAL VELOCITY  -->
+    <chunk>
+      <name>D5 GPS Vertical Velocity</name>
+      <type>double</type>
+      <node>/OpenEagle/D5GPS/vertical_velocity_fps</node>
+    </chunk>
+    <!--                    Arduino GPS                          -->
+    <!-- GPS LATITUDE -->
+    <chunk>
+      <name>GPS Latitude degree</name>
+      <type>double</type>
+      <node>/position/latitude-deg</node>
+    </chunk>
+    <!-- GPS LONGITUDE -->
+    <chunk>
+      <name>GPS Longitude degree</name>
+      <type>double</type>
+      <node>/position/longitude-deg</node>
+    </chunk>
+    <!-- GPS GROUNDSPEED -->
+    <chunk>
+      <name>Groundspeed knots</name>
+      <type>double</type>
+      <node>/velocities/groundspeed-kt</node>
+    </chunk>
+    <!-- GPS TRUE HEADING -->
+    <chunk>
+      <name>GPS True Heading degree</name>
+      <type>double</type>
+      <node>/orientation/true-heading-deg</node>
+    </chunk>
+    <!--                    Arduino ENGINE MONITOR              -->
+    <chunk>
+     <name>EM Fuel Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/fuel-pressure-psi</node>
+    </chunk>
+    <chunk>
+     <name>EM Oil Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-pressure-psi</node>
+    </chunk>
+    <chunk>
+     <name>EM Oil Temp Deg. F</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-temperature-degf</node>
+    </chunk>
+    <chunk>
+     <name>EM Cyliner Head Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/cht0-degf</node>
+    </chunk>
+    <chunk>
+     <name>EMExhaust Gas Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/egt0-degf</node>
+    </chunk>
+    <!--                   derived/calculated                     -->
+    <chunk>
+      <name>COMPAltitude ft</name>
+      <type>double</type>
+      <node>/position/altitude-ft</node>
+    </chunk>
+    <chunk>
+      <name>COMPSpeed Down FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-down-fps</node>
+    </chunk>
+    <chunk>
+      <name>COMPSpeed East FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-east-fps</node>
+    </chunk>
+    <chunk>
+      <name>COMPSpeed North FPS</name>
+      <type>double</type>
+      <node>/velocities/speed-north-fps</node>
+    </chunk>
+    <!--                   Extended Data                      -->
+    <chunk>
+      <name>Density Altitude ft</name>
+      <type>double</type>
+      <node>/OpenEagle/altitude/density-altitude</node>
+    </chunk>
+    <chunk>
+      <name>True Airspeed knots</name>
+      <type>double</type>
+      <node>/OpenEagle/airspeed/true-airspeed</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 First Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/first_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Second Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/second_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Third Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/third_prefix</node>
+    </chunk>
+    <!-- weight and balance -->
+    <chunk>
+      <name>crew_wt</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/crew_wt</node>
+    </chunk>
+    <chunk>
+      <name>baggage_wt</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/baggage_wt</node>
+    </chunk>
+    <chunk>
+      <name>fuel gallons</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/fuel_gallons</node>
+    </chunk>
+    <chunk>
+      <name>Engine RPM</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/RPM</node>
+    </chunk>
+    <chunk>
+      <name>Engine manifold-pressure-inhg</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/manifold-pressure-inhg</node>
+    </chunk>
+    <chunk>
+      <name>Engine fuel-flow-gph</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/fuel-flow-gph</node>
+    </chunk>
+    <chunk>
+      <name>Temperatue outside-air-temp-degf</name>
+      <type>double</type>
+      <node>/OpenEagle/temperature/outside-air-temp-degf</node>
+    </chunk>
+    <chunk>
+      <name>Flap Setting</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/flap_setting</node>
+    </chunk>
+    <chunk>
+      <name>Cowl Flap Opening inches</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/opening</node>
+    </chunk>
+  </output>
+ </generic>
+</PropertyList>

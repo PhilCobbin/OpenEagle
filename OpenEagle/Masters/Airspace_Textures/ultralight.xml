@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>airport.ac</path>
+  <!--
+  <animation>
+    <type>select</type>
+    <object-name>pillar</object-name>
+    <object-name>sign</object-name>
+    <condition>
+      <property>/open-eagle/ultralight/enabled</property>   
+    </condition>
+  </animation>
+  -->
+  <animation>
+    <type>none</type>
+    <object-name>pillar</object-name>
+  </animation>
+  <animation>
+    <type>billboard</type>
+    <object-name>sign</object-name>
+  </animation>
+</PropertyList>

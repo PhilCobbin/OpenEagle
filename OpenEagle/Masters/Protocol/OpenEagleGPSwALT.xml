@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic> 
+  <input>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    Arduino GPS                          -->
+      <!-- GPS LATITUDE -->
+      <chunk>
+        <name>GPS Latitude degree</name>
+        <type>double</type>
+        <node>/position/latitude-deg</node>
+      </chunk>
+      <!-- GPS LONGITUDE -->
+      <chunk>
+        <name>GPS Longitude degree</name>
+        <type>double</type>
+        <node>/position/longitude-deg</node>
+      </chunk>
+      <!-- GPS GROUNDSPEED -->
+      <chunk>
+        <name>Groundspeed knots</name>
+        <type>double</type>
+        <node>/velocities/groundspeed-kt</node>
+      </chunk>
+      <!-- GPS TRUE HEADING -->
+      <chunk>
+        <name>GPS True Heading degree</name>
+        <type>double</type>
+        <node>/orientation/true-heading-deg</node>
+      </chunk>
+      <!-- derived/calculated from GPS Antenna Altitude  -->
+      <chunk>
+        <name>COMPAltitude ft</name>
+        <type>double</type>
+        <node>/position/altitude-ft</node>
+      </chunk>
+    <!-- END                Arduino GPS                      END -->
+  </input>
+  <output>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    Arduino GPS                         -->
+      <!-- GPS LATITUDE -->
+      <chunk>
+        <name>GPS Latitude degree</name>
+        <type>double</type>
+        <node>/position/latitude-deg</node>
+      </chunk>
+      <!-- GPS LONGITUDE -->
+      <chunk>
+        <name>GPS Longitude degree</name>
+        <type>double</type>
+        <node>/position/longitude-deg</node>
+      </chunk>
+      <!-- GPS GROUNDSPEED -->
+      <chunk>
+        <name>Groundspeed knots</name>
+        <type>double</type>
+        <node>/velocities/groundspeed-kt</node>
+      </chunk>
+      <!-- GPS TRUE HEADING -->
+      <chunk>
+        <name>GPS True Heading</name>
+        <type>double</type>
+        <node>/orientation/true-heading-deg</node>
+      </chunk>
+      <!-- derived/calculated from GPS Antenna Altitude  -->
+      <chunk>
+        <name>COMPAltitude ft</name>
+        <type>double</type>
+        <node>/position/altitude-ft</node>
+      </chunk>
+    <!-- END                   Arduino GPS                      END -->
+  </output>
+ </generic>
+</PropertyList>

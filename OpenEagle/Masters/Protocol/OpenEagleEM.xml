@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic> 
+  <input>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    Arduino ENGINE MONITOR              -->
+      <chunk>
+       <name>EM Fuel Pressure psi</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/fuel-pressure-psi</node>
+      </chunk>
+      <chunk>
+       <name>EM Oil Pressure psi</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/oil-pressure-psi</node>
+      </chunk>
+      <chunk>
+       <name>EM Oil Temp Deg. F</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/oil-temperature-degf</node>
+      </chunk>
+      <chunk>
+       <name>EM Cyliner Head Temp cyl 0</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/cht0-degf</node>
+      </chunk>
+      <chunk>
+       <name>EMExhaust Gas Temp cyl 0</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/egt0-degf</node>
+      </chunk>
+    <!-- END                Arduino ENGINE MONITOR          END -->
+  </input>
+   
+  <output>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    Arduino ENGINE MONITOR              -->
+    <chunk>
+     <name>EM Fuel Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/fuel-pressure-psi</node>
+    </chunk>    
+    <chunk>
+     <name>EM Oil Pressure psi</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-pressure-psi</node>
+    </chunk>    
+    <chunk>
+     <name>EM Oil Temp Deg. F</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/oil-temperature-degf</node>
+    </chunk>    
+    <chunk>
+     <name>EM Cyliner Head Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/cht0-degf</node>
+    </chunk>   
+    <chunk>
+     <name>EMExhaust Gas Temp cyl 0</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/egt0-degf</node>
+    </chunk> 
+    <!-- END                Arduino ENGINE MONITOR          END -->
+  </output>
+ </generic>
+</PropertyList>

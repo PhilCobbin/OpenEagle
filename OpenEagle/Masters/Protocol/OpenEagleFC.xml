@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic> 
+  <input>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    FC10 Fuel Computer              -->
+      <chunk>
+       <name>FC Fuel Gallons</name>
+        <type>double</type>
+        <node>/OpenEagle/weight_and_balance/fuel_gallons</node>
+      </chunk>
+      <chunk>
+       <name>FC Fuel Flow GPH</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/fuel-flow-gph</node>
+      </chunk>
+    <!-- END                FC10 Fuel Computer          END -->
+  </input>
+   
+  <output>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    FC10 Fuel Computer              -->
+      <chunk>
+       <name>FC Fuel Gallons</name>
+        <type>double</type>
+        <node>/OpenEagle/weight_and_balance/fuel_gallons</node>
+      </chunk>
+      <chunk>
+       <name>FC Fuel Flow GPH</name>
+        <type>double</type>
+        <node>/OpenEagle/engine/fuel-flow-gph</node>
+      </chunk>
+    <!-- END                FC10 Fuel Computer          END -->
+  </output>
+ </generic>
+</PropertyList>

@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <generic> 
+  <input>
+    <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>   
+    <binary_footer>none</binary_footer>
+    <!--                    OpenEagle Manual Protocol                      -->
+    <chunk>
+      <name>CRM114 First Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/first_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Second Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/second_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Third Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/third_prefix</node>
+    </chunk>
+    <chunk>
+      <name>Crew Weight</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/crew_wt</node>
+    </chunk>
+    <chunk>
+      <name>Baggage Weight</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/baggage_wt</node>
+    </chunk>
+    <chunk>
+      <name>RPM</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/RPM</node>
+    </chunk>
+    <chunk>
+      <name>Manifold Pressure InHg</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/manifold-pressure-inhg</node>
+    </chunk>
+    <chunk>
+      <name>Outside Air Temperature Deg. F.</name>
+      <type>double</type>
+      <node>/OpenEagle/temperature/outside-air-temp-degf</node>
+    </chunk>
+    <chunk>
+      <name>Flap Setting</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/flap_setting</node>
+    </chunk>
+    <chunk>
+      <name>Cowl Flap In</name>
+      <type>double</type>
+      <node>OpenEagle/cowl_flap/opening</node>
+    </chunk>
+    <!-- END                OpenEagleManual Protocol    END -->
+  </input>
+  <output>
+   <binary_mode>true</binary_mode>
+    <byte_order>host</byte_order>
+    <binary_footer>none</binary_footer>
+    <!--                    OpenEagle Manual Protocol                      -->
+    <chunk>
+      <name>CRM114 First Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/first_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Second Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/second_prefix</node>
+    </chunk>
+    <chunk>
+      <name>CRM114 Third Prefix</name>
+      <type>double</type>
+      <node>/OpenEagle/crm114/third_prefix</node>
+    </chunk>
+    <chunk>
+      <name>Crew Weight</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/crew_wt</node>
+    </chunk>
+    <chunk>
+      <name>Baggage Weight</name>
+      <type>double</type>
+      <node>/OpenEagle/weight_and_balance/baggage_wt</node>
+    </chunk>
+    <chunk>
+      <name>RPM</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/RPM</node>
+    </chunk>
+    <chunk>
+      <name>Manifold Pressure InHg</name>
+      <type>double</type>
+      <node>/OpenEagle/engine/manifold-pressure-inhg</node>
+    </chunk>
+    <chunk>
+      <name>Outside Air Temperature Deg. F.</name>
+      <type>double</type>
+      <node>/OpenEagle/temperature/outside-air-temp-degf</node>
+    </chunk>
+    <chunk>
+      <name>Flap Setting</name>
+      <type>double</type>
+      <node>/OpenEagle/flaps/flap_setting</node>
+    </chunk>
+    <chunk>
+      <name>Cowl Flap In</name>
+      <type>double</type>
+      <node>OpenEagle/cowl_flap/opening</node>
+    </chunk>
+    <!-- END                OpenEagleManual Protocol    END -->
+  </output>
+ </generic>
+</PropertyList>

@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>VSI.ac</path>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>scale</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>0</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-3500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-4900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-2100.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-3500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>3500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-3000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-4400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-1600.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-3000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>3000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-2500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-3900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-1100.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-2500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>2500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-2000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-3400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-600.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-2000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>2000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-1500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-2900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-100.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-1500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>1500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-1000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-2400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-1000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>1000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_-500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-1900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_-500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+0</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-1400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">1400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+0</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>  0.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">1900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+1000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">-400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">2400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+1000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-1000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+1500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">2900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+1500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-1500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+2000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">3400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+2000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-2000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+2500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">1100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">3900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+2500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-2500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+3000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">1600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">4400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+3000</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-3000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>VSI_+3500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">2100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/OpenEagle/vsi-fpm</property>
+          <value type="double">4900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>VSI_+3500</object-name>
+    <property>/OpenEagle/vsi-fpm</property>
+    <bias>-3500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

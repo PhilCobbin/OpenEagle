@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>pitch.ac</path>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>scale</object-name>
+    <object-name>reticle</object-name>
+    <object-name>pitch_-90</object-name>
+    <object-name>pitch_-80</object-name>
+    <object-name>pitch_-70</object-name>
+    <object-name>pitch_-60</object-name>
+    <object-name>pitch_-50</object-name>
+    <object-name>pitch_-40</object-name>
+    <object-name>pitch_-30</object-name>
+    <object-name>pitch_-20</object-name>
+    <object-name>pitch_-10</object-name>
+    <object-name>pitch_+0</object-name>
+    <object-name>pitch_+10</object-name>
+    <object-name>pitch_+20</object-name>
+    <object-name>pitch_+30</object-name>
+    <object-name>pitch_+40</object-name>
+    <object-name>pitch_+50</object-name>
+    <object-name>pitch_+60</object-name>
+    <object-name>pitch_+70</object-name>
+    <object-name>pitch_+80</object-name>
+    <object-name>pitch_+90</object-name>
+    <property>/orientation/roll-deg</property>
+    <factor>1</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>scale</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>0</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-90</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-104.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-76.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-90</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 90.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-80</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-94.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-66.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-80</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 80.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-70</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-84.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-56.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-70</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 70.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-60</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-74.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-46.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-60</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 60.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-50</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-64.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-36.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-50</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 50.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-40</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-54.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-26.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-40</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 40.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-30</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-44.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-16.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-30</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 30.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-20</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-34.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> -6.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-20</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 20.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_-10</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-24.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">  4.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_-10</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias> 10.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+0</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">-14.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 14.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+0</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>  0.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+10</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> -4.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 24.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+10</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-10.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+20</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">  6.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 34.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+20</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-20.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+30</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 16.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 44.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+30</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-30.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+40</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 26.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 54.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+40</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-40.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+50</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 36.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 64.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+50</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-50.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+60</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 46.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 74.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+60</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-60.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+70</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 56.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 84.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+70</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-70.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+80</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 66.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 94.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+80</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-80.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>pitch_+90</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double"> 76.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/orientation/pitch-deg</property>
+          <value type="double">104.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>pitch_+90</object-name>
+    <property>/orientation/pitch-deg</property>
+    <bias>-90.000000</bias>
+    <factor>  0.033333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

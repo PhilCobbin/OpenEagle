@@ -1,0 +1,52 @@
+<!-- /***************************************************************    -->
+<!--  * Name:      map.html                                              -->
+<!--  * Purpose:   display a moving map of an FAA sectional              -->
+<!--  * Author:    Philip Cobbin (phil@cobbin.com)                       -->
+<!--  * Created:   2022                                                  -->
+<!--  * Copyright: Philip Cobbin (cobbin.com)                            -->
+<!--  * License    GPLv3 see: https://www.gnu.org/licenses/gpl-3.0.htm   -->
+<!--  *                                                                  -->
+<!--  * This library is free software; you can redistribute it and/or    -->
+<!--  * modify it under the terms of the GNU Library General Public      -->
+<!--  * License as published by the Free Software Foundation; either     -->
+<!--  * version 2 of the License, or (at your option) any later versio   -->
+<!--  *                                                                  -->
+<!--  * This library is distributed in the hope that it will be useful   -->
+<!--  * but WITHOUT ANY WARRANTY; without even the implied warranty of   -->
+<!--  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    -->
+<!--  * Library General Public License for more details.                 -->
+<!--  *                                                                  -->
+<!--  * You should have received a copy of the GNU General Public Lice   -->
+<!--  * along with this program; if not, write to the Free Software      -->
+<!--  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA    -->
+<!--  **************************************************************/    -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Preview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CodeBlocksProjects/3rdparty/Leaflet-1.5.1/dist/leaflet.css"/>
+  <script src="../../../CodeBlocksProjects/3rdparty/Leaflet-1.5.1/dist/leaflet.js"></script>
+  <script src="../../../CodeBlocksProjects/OpenEagleorientedmarker/leaflet.OpenEagleorientedmarker.js"></script>
+  <style type="text/css">
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    html, body, #map{
+       width: 100%;
+       height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <button style=font-size:18px;"height:30px; width:120px id="zoom_in">Zoom +</button>
+  <button style=font-size:18px;"height:30px; width:120px id="zoom_out">Zoom -</button>
+  <button style=font-size:18px;"height:30px; width:256px id="toggleRouteManager">Toggle Route Manager</button>
+  <button style=font-size:18px;"height:30px; width:256px id="toggleFlightHistory">Toggle Flight History</button>
+  <button style=font-size:18px;"height:30px; width:256px id="toggleCentering">Toggle Centering</button>
+LAT: <span id="lat"></span>° LON: <span id="lon"></span>° THDG: <span id="hdg"></span>°
+  <div id="map"></div>
+  <script>
+    /// make a map and tiles

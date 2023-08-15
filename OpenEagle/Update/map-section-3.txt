@@ -1,0 +1,140 @@
+    document.getElementById('hdg').textContent = heading;		
+    const apiURL = 'http://localhost:8080/json/position/';      
+    let firstTime = true;
+    async function getAClonlat() {
+      const response = await fetch(apiURL);
+      const data = await response.json();
+      const { path, name, value, type, index, nchildren, children} = data;
+      latitude = children[0].value;
+      longitude = children[1].value;
+      point.setLatLng([children[1].value,children[0].value]);
+      if (firstTime) {
+        map.setView([children[1].value,children[0].value],10.5);
+        firstTime = false;
+      }
+      else {
+        if (centering) {
+          map.setView([children[1].value,children[0].value]);
+        }
+      }
+      document.getElementById('lat').textContent = children[0].value;
+      document.getElementById('lon').textContent = children[1].value;        
+    }
+    getAClonlat();
+    setInterval(getAClonlat, 1000);
+    
+    const apiHdgURL = 'http://localhost:8080/json/orientation/heading-deg/';
+    async function getACheading() {
+      const response = await fetch(apiHdgURL);
+      const data = await response.json();
+      const { path, name, value, type, index, nchildren, children} = data;
+      heading = value;
+      var a = point.options.icon.options.iconAnchor;
+      document.getElementById('hdg').textContent = value;
+      point.options.angle = heading;
+    }  
+    getACheading();
+    setInterval(getACheading,1000);      
+
+/// reference: /Phi/topics/Map.js starting at line 60    
+    var trackLayer = new L.GeoJSON(null, {});
+        trackLayer.maxTrackPoints = 2000;
+
+    trackLayer.track = {
+      "type" : "Feature",
+      "geometry" : {
+          "type" : "LineString",
+          "coordinates" : []
+      },
+      "properties" : {
+          "type" : "FlightHistory",
+          "last" : 0
+      }
+   }    
+
+    const apiFlightHistoryURL = 'http://localhost:8080/flighthistory/track.json?';
+    async function getFlightHistory() {      
+      var Url = apiFlightHistoryURL;
+      const response = await fetch(Url);
+      const data = await response.json();
+      trackLayer.clearLayers();    
+      for (var i = LastHistoryIndex; i<LastHistoryIndex +1000; i++) {
+         LastHistoryIndex = i;
+         if (data.geometry.coordinates[i] == null) break;
+         polylineHistory.addLatLng([data.geometry.coordinates[i][1],data.geometry.coordinates[i][0]]);
+       }
+  
+      trackLayer.addData(trackLayer.track);    
+    }
+    getFlightHistory();         
+    setInterval(getFlightHistory,10000);  
+    
+		document.getElementById('zoom_in').onclick = function() {
+    map.zoomIn(1);
+		};
+		document.getElementById('zoom_out').onclick = function() {
+			map.zoomIn(-1);
+		};    
+		
+		Myroute = [
+      [35.140314,-111.669262],   
+      [35.131217,-111.678919],
+      [35.021974,-110.722389],
+      [35.650567,-112.148117],
+      [35.335077,-112.88651],
+      [34.730056,-112.03513],
+      [35.021974,-110.722389],
+      [35.140314,-111.669262]     
+		];
+    const apiRouteManagerURL = 'http://localhost:8080//json/autopilot/route-manager/route?d=3';
+    async function getRouteManager() {
+        const response = await fetch(apiRouteManagerURL);
+        const data = await response.json();    
+        const { path, name, value, type, index, nChildren, children} = data;         
+        var routeLength = children[0].value;
+        for (var i = 1; i<= routeLength; i++) {
+          myroute.push([children[i].children[2].value,children[i].children[1].value]);
+        }
+		  }
+		getRouteManager();
+
+    document.getElementById('toggleRouteManager').onclick = function() {
+      const cb = document.querySelector('#toggle_routeManager');   
+      
+      if (routeManager==false) {
+      		getRouteManager();
+      console.log('******************************************* ROUTE MANAGER ************************************************');
+      		console.log('myroute',myroute);
+      polyline = L.polyline(myroute, {color: 'red'});
+        map.addLayer(polyline);
+        routeManager = true;
+      }
+      else {
+        map.removeLayer(polyline);
+        routeManager = false;
+      }
+    };
+
+    document.getElementById('toggleFlightHistory').onclick = function() {
+      if (flightHistory==false) {
+        console.log('******************************************* HISTORY ************************************************');
+        map.addLayer(polylineHistory);
+        flightHistory = true;
+      }
+      else {
+        map.removeLayer(polylineHistory);
+        flightHistory = false;
+      }    
+    };
+    
+    document.getElementById('toggleCentering').onclick = function() {   
+      if (centering == true) {
+        centering = false;
+      }
+      else {
+        centering = true;
+      }
+    };
+  </script>
+</body>
+</html>

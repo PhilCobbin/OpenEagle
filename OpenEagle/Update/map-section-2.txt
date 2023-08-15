@@ -1,0 +1,24 @@
+    /// make a marker with custom icon
+    const airplaneIcon = L.icon({
+      iconUrl: '../../../CodeBlocksProjects/3rdparty/flightgear/fgdata/Phi/images/aircraft.svg',
+      iconSize: [50,50],
+      iconAnchor: [0,0],
+      popupAnchor: [-3, -76], 
+    });
+    
+    var centering = false;
+		var polyline;
+		
+		var routeManager = false;  
+    var polylineHistory;
+    var flightHistory = false;    
+		let myroute = new Array();   
+    var Myroute;
+		let myHistory = new Array(); 
+    polylineHistory = L.polyline(myHistory, {color: 'green'});
+    var LastHistoryIndex = 0;
+    var MyHistory;
+    
+    var latitude;
+    var longitude;
+    var heading = 0.0;

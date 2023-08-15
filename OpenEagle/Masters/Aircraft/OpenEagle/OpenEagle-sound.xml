@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!-- 
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     /////                           filename:  OpenEagle-sound.xml                         //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     //////                                                                                  //////
+     //////     OpenEagle.xml: Sounds, (alarms) associated with Open Eagle flight display   //////
+     //////     This file started as hacking, cutting pasting, spit, chewing gum, bandaid    //////
+     //////     and bailing wire rework of the FlightGear UFO files                          //////
+     //////     version 0.1 released 2006-10-24                                              //////
+     //////     by Philip Cobbin                                                             //////
+     //////                                                                                  //////
+     //////   location: /Flightgear/data/Aircraft/OpenEagle/OpenEagle.xml                  //////
+     //////                                                                                  //////
+     //////                          *****NOTICE*****                                        //////
+     //////                                                                                  //////
+     //////    This program is free software; you can redistribute it and/or modify          //////
+     //////    it under the terms of the GNU General Public License as published by          //////
+     //////    the Free Software Foundation; either version 2 of the License, or             //////
+     //////    (at your option) any later version.                                           //////
+     //////                                                                                  //////
+     //////    This program is distributed in the hope that it will be useful,               //////
+     //////    but WITHOUT ANY WARRANTY; without even the implied warranty of                //////
+     //////    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                 //////
+     //////    GNU General Public License for more details.                                  //////
+     //////                                                                                  //////
+     //////    You should have received a copy of the GNU General Public License             //////
+     //////    along with this program; if not, write to the Free Software                   //////
+     //////    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA      //////
+     //////                                                                                  //////
+     //////    Philip Cobbin; AKA Sierra Simulations & Software can be reached at:           //////
+     //////    499 Grafton Turnpike, Canaan, New Hampshire, U.S.A 03741                      //////
+     //////    Website:  http://www.cobbin.com             e-mail:  cobbin@cobbin.com        //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+<PropertyList>
+  <fx>
+    <speed1>
+      <name>speed1</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/busytone.wav</path>
+      <condition>
+        <property>/OpenEagle/alarms/enabled</property>
+        <property>/OpenEagle/alarms/sound/enabled</property>
+        <and>
+          <greater-than>
+          <property>/velocities/airspeed-kt</property>
+          <property>/OpenEagle/poh/Vno</property>
+          </greater-than>   
+          <less-than>
+            <property>/velocities/airspeed-kt</property>
+            <property>/OpenEagle/poh/Vne</property>
+          </less-than>   
+        </and>
+      </condition>  
+    </speed1>	 
+    <speed2>
+    <name>speed2</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/overspeed.wav</path>
+      <condition>
+        <property>/OpenEagle/alarms/enabled</property>
+        <property>/OpenEagle/alarms/sound/enabled</property>
+        <greater-than>
+          <property>/velocities/airspeed-kt</property>
+          <property>/OpenEagle/poh/Vne</property>
+        </greater-than>
+      </condition>
+    </speed2>
+    <speed3>
+      <name>speed3</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/airspeed-low.wav</path>
+      <condition>
+        <property>/OpenEagle/alarms/enabled</property>
+        <property>/OpenEagle/alarms/sound/enabled</property>
+        <and>
+          <less-than>
+            <property>/velocities/airspeed-kt</property>
+            <property>/OpenEagle/alarms/normal-landing/speed-fu-l</property>
+          </less-than>
+          <greater-than>
+            <property>/position/altitude-agl-ft</property>
+            <value>50</value>
+          </greater-than>
+        </and>
+      </condition>
+    </speed3>
+    <speed4>
+      <name>speed4</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/airspeed-low.wav</path>
+      <condition>
+        <and>
+          <less-than>
+            <property>/velocities/airspeed-kt</property>
+            <value>70</value>
+          </less-than>
+          <greater-than>
+            <property>/position/altitude-agl-ft</property>
+            <value>1000</value>
+          </greater-than>
+        </and>
+      </condition>
+    </speed4>
+    <speed5>
+      <name>speed5</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/caution-airspeed-low.wav</path>
+      <condition>
+        <and>
+          <less-than>
+            <property>/velocities/airspeed-kt</property>
+            <value>90</value>
+          </less-than>
+          <greater-than>
+            <property>/position/altitude-agl-ft</property>
+            <value>1000</value>
+          </greater-than>
+        </and>
+      </condition>
+    </speed5>
+    <stallaoa>
+      <name>stallaoa</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/stall.wav</path>
+      <property>/OpenEagle/alarms/enabled</property>
+      <property>/OpenEagle/alarms/sound/enabled</property>
+      <condition>
+        <greater-than>
+          <property>/orientation/alpha-deg</property>
+          <value>9.0</value>
+        </greater-than>
+      </condition>
+    </stallaoa>
+    <sinkratex>
+      <name>sinkratex</name>
+      <mode>looped</mode>
+      <path>Aircraft/OpenEagle/Sounds/sinkrate.wav</path>
+      <condition>
+        <property>/OpenEagle/alarms/enabled</property>
+        <property>/OpenEagle/alarms/sound/enabled</property>
+        <less-than>
+          <property>/velocities/vertical-speed-fps</property>
+          <value>-10.0</value>
+        </less-than>
+      </condition>
+    </sinkratex>
+  </fx>
+</PropertyList>

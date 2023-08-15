@@ -1,0 +1,1084 @@
+<?xml version="1.0"?>
+
+<!-- 
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     /////                           filename:  OpenEagle-set.xml                           //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     //////                                                                                  //////
+     //////     OpenEagle-set.xml: implements Open Eagle flight display                     //////
+     //////                         including the Open Eagle pilot operating handbook (POH)  //////
+     //////                         and alarm system                                         //////
+     //////     This file started as hacking, cutting pasting, spit, chewing gum, bandaid    //////
+     //////     and bailing wire rework of the FlightGear UFO files                          //////
+     //////     version 0.1 released 2006-10-24                                              //////
+     //////     by Philip Cobbin                                                             //////
+     //////                                                                                  //////
+     //////   location: /Flightgear/data/Aircraft/OpenEagle/OpenEagle-set.xml                //////
+     //////                                                                                  //////
+     //////                          *****NOTICE*****                                        //////
+     //////                                                                                  //////
+     //////    This program is free software; you can redistribute it and/or modify          //////
+     //////    it under the terms of the GNU General Public License as published by          //////
+     //////    the Free Software Foundation; either version 2 of the License, or             //////
+     //////    (at your option) any later version.                                           //////
+     //////                                                                                  //////
+     //////    This program is distributed in the hope that it will be useful,               //////
+     //////    but WITHOUT ANY WARRANTY; without even the implied warranty of                //////
+     //////    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                 //////
+     //////    GNU General Public License for more details.                                  //////
+     //////                                                                                  //////
+     //////    You should have received a copy of the GNU General Public License             //////
+     //////    along with this program; if not, write to the Free Software                   //////
+     //////    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA      //////
+     //////                                                                                  //////
+     //////    Philip Cobbin; AKA Sierra Simulations & Software can be reached at:           //////
+     //////    499 Grafton Turnpike, Canaan, New Hampshire, U.S.A 03741                      //////
+     //////    Website:  http://www.cobbin.com             e-mail:  cobbin@cobbin.com        //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+<PropertyList>
+
+<sim>
+  <description>Open Eagle synthetic vision system</description>
+  <author>Phil Cobbin</author>
+
+  <flight-model>ufo</flight-model>  
+  <aero>OpenEagle</aero>  
+  
+  <startup>
+    <splash-texture>Aircraft/OpenEagle/OpenEagle-splash.rgb</splash-texture>
+  </startup>
+    
+  <sound>
+    <path>Aircraft/OpenEagle/OpenEagle-sound.xml</path>
+  </sound>
+  
+  <model>
+    <path>Aircraft/OpenEagle/Models/OpenEagle.xml</path>
+  </model>    
+
+  <aircraft-version>2023.0521</aircraft-version>
+  <minimum-fg-version>2020.3.18</minimum-fg-version>
+
+  <view n="0">
+    <name>Open Eagle PFD View</name>
+    <type>lookfrom</type>   
+    <internal archive="y">true</internal>     
+    <config>
+      <ground-level-nearplane-m type="double">0.508f</ground-level-nearplane-m>     <!-- 20 inches from belly to ground? -->
+      <x-offset-m archive="y">0.0</x-offset-m>
+      <y-offset-m archive="y">1.762</y-offset-m>  <!-- 30 inches over belly-->
+      <z-offset-m archive="y">0.0</z-offset-m> <!--  reference for view at 0 inches (cg of AC?) -->  
+      <pitch-offset-deg>0.0</pitch-offset-deg>
+      <default-field-of-view-deg type="double">90.0</default-field-of-view-deg> 
+    </config>
+  </view>
+  
+
+  
+   <view>
+   <name>OpenEagle 5000 foot Overhead View</name>
+   <type>lookat</type>
+   <config>
+     <from-model type="bool">false</from-model>
+     <from-model-idx type="int">0</from-model-idx>
+     <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+     <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+     <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+     <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+
+     <at-model type="bool">true</at-model>
+     <at-model-idx type="int">0</at-model-idx>
+
+     <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+
+     <x-offset-m type="double">0</x-offset-m>
+     <y-offset-m type="double">1523.93</y-offset-m>
+     <z-offset-m type="double">-25</z-offset-m>
+   </config>
+ </view>
+
+  <view>
+   <name>OpenEagle Left Side terrain View</name>
+   <type>lookat</type>
+   <config>
+     <from-model type="bool">false</from-model>
+     <from-model-idx type="int">0</from-model-idx>
+     <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+     <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+     <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+     <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+
+     <at-model type="bool">true</at-model>
+     <at-model-idx type="int">0</at-model-idx>
+
+     <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+
+     <x-offset-m type="double">3040.78</x-offset-m>
+     <y-offset-m type="double">0</y-offset-m>
+     <z-offset-m type="double">3218</z-offset-m>
+   </config>
+ </view>
+ 
+  <view>
+   <name>OpenEagle 1000 foot Chase View</name>
+   <type>lookat</type>
+   <config>
+     <from-model type="bool">false</from-model>
+     <from-model-idx type="int">0</from-model-idx>
+     <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+     <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+     <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+     <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+
+     <at-model type="bool">true</at-model>
+     <at-model-idx type="int">0</at-model-idx>
+
+     <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+
+     <x-offset-m type="double">304.78</x-offset-m>
+     <y-offset-m type="double">304.78</y-offset-m>
+     <z-offset-m type="double">-304.78</z-offset-m>
+   </config>
+ </view>
+
+  
+    
+ 
+
+  <help>
+    <title>Open Eagle</title>
+    <key>
+      <name>joystick fire button</name>
+      <desc>fly backwards</desc>
+    </key>
+    <key>
+      <name>b</name>
+      <desc>Toggle POH.</desc>
+    </key>
+    <key>
+      <name>o</name>
+      <desc>Toggle POH.</desc>
+    </key>
+    <key>
+      <name>f</name>
+      <desc>Cycle Flight Mode</desc>
+    </key>
+    <key>
+      <name>Keypad 5</name>
+      <desc>Reset View.</desc>
+   </key>
+   <key>
+     <name>Shift Keypad 5</name>
+     <desc>Reset zoom to default.</desc>
+   </key>
+   <key>
+     <name>Left</name>
+     <desc>Pan left.</desc>
+   </key>
+   <key>
+     <name>Up</name>
+     <desc>Pan up.</desc>
+   </key>
+   <key>
+	   <name>Right</name>
+	   <desc>Pan right.</desc>
+   </key>
+   <key>
+	   <name>Down</name>
+	   <desc>Pan down.</desc>
+   </key>
+   <key>
+	   <name>PageUp</name>
+	   <desc>Increase field of view.</desc>
+   </key>
+   <key>
+	   <name>PageDown</name>
+	   <desc>Decrease field of view.</desc>
+   </key>
+   <key>
+	   <name>Home</name>
+	   <desc>Scroll views.</desc>
+   </key>
+   <key>
+	   <name>End</name>
+	   <desc>Center aileron, elevator, and rudder.</desc>
+   </key>
+   <key>
+	   <name>+</name>
+	   <desc>Increase throttle.</desc>
+   </key>
+   <key>
+	   <name>Shift +</name>
+	   <desc>Full Throttle</desc>
+   </key>
+   <key>
+	   <name>-</name>
+	   <desc>Decrease throttle.</desc>
+   </key>
+   <key>
+	   <name>Shift -</name>
+	   <desc>Close Throttle</desc>
+   </key>
+
+    </help> 
+  </sim>  
+  
+<input>
+		<keyboard>
+		  <!--  ufo keys
+			<key n="8">
+				<name>Backspace</name>
+				<desc>Remove selected object</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.modelmgr.remove_selected()</script>
+				</binding>
+			</key>
+
+			<key n="7">
+				<name>Ctrl-G</name>
+				<desc>Gear Up.</desc>
+				<binding>
+					<command>nasal</command>
+					<script>controls.gearDown(-1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>controls.gearDown(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+
+			<key n="61">
+				<name>=</name>
+				<desc>Show object adjustment dialog</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.adjust_dialog.toggle()</script>
+				</binding>
+			</key>
+
+			<key n="32">
+				<name>SPACE</name>
+				<desc>Show model select dialog</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.select_dialog.toggle()</script>
+				</binding>
+			</key>
+
+			<key n="99">
+				<name>c</name>
+				<desc>Clone selected objects</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.modelmgr.clone_selected()</script>
+				</binding>
+			</key>
+
+			<key n="100">
+				<name>d</name>
+				<desc>Dump coordinates</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.print_data()</script>
+				</binding>
+			</key>
+
+			<key n="101">
+				<name>e</name>
+				<desc>Export object data XML file</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.export_data()</script>
+				</binding>
+			</key>
+
+			<key n="108">
+				<name>l</name>
+				<desc>Open file selector</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.file_select_model()</script>
+				</binding>
+			</key>
+
+			<key n="109">
+				<name>m</name>
+				<desc>Toggle "active object" marker</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.modelmgr.toggle_marker()</script>
+				</binding>
+			</key>
+
+			<key n="110">
+				<name>n</name>
+				<desc>Export FlightPlan</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.export_flightplan()</script>
+				</binding>
+			</key>
+
+			<key n="360">
+				<name>PageUp</name>
+				<desc>Increase throttle or autopilot autothrottle.</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.cycle(1);
+						} else {
+							controls.incThrottle(0.01, 1.0)
+						}
+					</script>
+				</binding>
+				<mod-shift>
+					<desc>Look front right.</desc>
+					<binding>
+						<command>property-assign</command>
+						<property>/sim/current-view/goal-heading-offset-deg</property>
+						<property>/sim/view/config/front-right-direction-deg</property>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="361">
+				<name>PageDown</name>
+				<desc>Decrease throttle or autopilot autothrottle.</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.cycle(-1);
+						} else {
+							controls.incThrottle(-0.01, -1.0)
+						}
+					</script>
+				</binding>
+				<mod-shift>
+					<desc>Look back right.</desc>
+					<binding>
+						<command>property-assign</command>
+						<property>/sim/current-view/goal-heading-offset-deg</property>
+						<property>/sim/view/config/back-right-direction-deg</property>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="356">
+				<name>Left</name>
+				<desc>Move aileron left (or adjust AP heading.)</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.adjust("transversal", -1);
+						} else {
+							controls.incAileron(-0.05, -1.0);
+						}
+					</script>
+				</binding>
+				<mod-shift>
+					<desc>Look left.</desc>
+					<binding>
+						<command>nasal</command>
+						<script>
+							if (getprop("/devices/status/keyboard/ctrl")) {
+								ufo.modelmgr.adjust("transversal", -10);
+							} else {
+								setprop("/sim/current-view/goal-heading-offset-deg",
+									getprop("/sim/view/config/left-direction-deg"));
+							}
+						</script>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="357">
+				<name>Up</name>
+				<desc>Increase elevator or autopilot altitude.</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.adjust("longitudinal", 1);
+						} else {
+							controls.incElevator(0.05, -100);
+						}
+					</script>
+				</binding>
+				<mod-shift>
+					<desc>Look forward.</desc>
+					<binding>
+						<command>nasal</command>
+						<script>
+							if (getprop("/devices/status/keyboard/ctrl")) {
+								ufo.modelmgr.adjust("longitudinal", 10);
+							} else {
+								setprop("/sim/current-view/goal-heading-offset-deg",
+									getprop("/sim/view/config/front-direction-deg"));
+							}
+						</script>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="358">
+				<name>Right</name>
+				<desc>Move aileron right (or adjust AP heading.)</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.adjust("transversal", 1);
+						} else {
+							controls.incAileron(0.05, 1.0);
+						}
+					</script>
+					<step type="double">0.05</step>
+				</binding>
+				<mod-shift>
+					<desc>Look right.</desc>
+					<binding>
+						<command>nasal</command>
+						<script>
+							if (getprop("/devices/status/keyboard/ctrl")) {
+								ufo.modelmgr.adjust("transversal", 10);
+							} else {
+								setprop("/sim/current-view/goal-heading-offset-deg",
+									getprop("/sim/view/config/right-direction-deg"));
+							}
+						</script>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="359">
+				<name>Down</name>
+				<desc>Decrease elevator or autopilot altitude.</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>
+						if (getprop("/devices/status/keyboard/ctrl")) {
+							ufo.modelmgr.adjust("longitudinal", -1);
+						} else {
+							controls.incElevator(-0.05, 100);
+						}
+					</script>
+				</binding>
+				<mod-shift>
+					<desc>Look backwards.</desc>
+					<binding>
+						<command>nasal</command>
+						<script>
+							if (getprop("/devices/status/keyboard/ctrl")) {
+								ufo.modelmgr.adjust("longitudinal", -10);
+							} else {
+								setprop("/sim/current-view/goal-heading-offset-deg",
+									getprop("/sim/view/config/back-direction-deg"));
+							}
+						</script>
+					</binding>
+				</mod-shift>
+			</key>
+
+			<key n="362">
+				<name>Home</name>
+				<desc>Hover Up</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.up(1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.up(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+			
+			
+			<key n="44">
+				<name>,</name>
+				<desc>skew left</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.leftright(-1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.leftright(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+			<key n="46">
+				<name>.</name>
+				<desc>skew right</desc>
+				<repeatable type="bool">true</repeatable>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.leftright(1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.leftright(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+			
+			
+
+			<key n="363">
+				<name>End</name>
+				<desc>Hover Down</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.up(-1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.up(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+
+			<key n="311">
+				<name>KP7</name>
+				<desc>Hover Up</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.up(1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.up(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+
+			<key n="305">
+				<name>KP1</name>
+				<desc>Hover Down</desc>
+				<binding>
+					<command>nasal</command>
+					<script>ufo.up(-1)</script>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>nasal</command>
+						<script>ufo.up(0)</script>
+					</binding>
+				</mod-up>
+			</key>
+		
+		  -->
+  
+<!-- OpenEagle keyboard settings -->
+
+		  <key n="86">
+			  <name>V</name>
+			  <desc>Scroll in reverse through views.</desc>
+			  <binding>
+				  <command>nasal</command>
+				  <script>OpenEagle.OEstepView(-1);</script>
+			  </binding>
+		  </key>
+		  
+		  <key n="118">
+			  <name>v</name>
+			  <desc>Scroll through views.</desc>
+			  <binding>
+				  <command>nasal</command>
+				  <script>OpenEagle.OEstepView(1);</script>
+			  </binding>
+		  </key>
+		  
+
+		  <key n="88">
+			  <name>X</name>
+			  <desc>Increase field of view.</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>OpenEagle.OEincrease()</script>
+			  </binding>
+		  </key>
+		  
+		  <key n="120">
+			  <name>x</name>
+			  <desc>Decrease field of view.</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>OpenEagle.OEdecrease()</script>
+			  </binding>
+		  </key>
+                  
+
+		  <key n="98">
+			  <name>b</name>
+			  <desc>cw heading bug one degree</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>
+				    OpenEagle.OEHeadingBugInc()
+			           </script>
+			  </binding>
+		  </key>
+		  <key n="66">
+			  <name>B</name>
+			  <desc>ccw heading bug one degree</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>
+				    OpenEagle.OEHeadingBugDec()
+			           </script>
+			  </binding>
+		  </key>
+		
+		  <key n="115">
+			  
+			  <name>s</name>
+			  <desc>up cycle airspace selector</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/heading-cw</property>
+				  <value>1</value>
+			  </binding>
+		  </key>
+		  <key n="111">
+			  <name>o</name>
+			  <desc>Toggle POH.</desc>
+			  <binding>
+				  <command>dialog-show</command>
+				  <dialog-name>poh</dialog-name>
+			  </binding>
+		  </key>
+
+                      <key n="102">
+			  <name>f</name>
+			  <desc>Cycle Flight</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/flight-mode</property>
+				  <value>0</value>
+				  <value>1</value>
+				  <value>2</value>
+				  <value>3</value>
+				  <value>4</value>
+				  <value>5</value>
+				  <value>6</value>
+			  </binding>
+		  </key>
+
+                      <key n="117">
+			  <name>u</name>
+			  <desc>up cycle airspace selector</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/selector-up</property>
+				  <value>1</value>
+			  </binding>
+		  </key>
+		  <key n="100">
+			  <name>d</name>
+			  <desc>down cycle airspace selector</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/selector-down</property>
+				  <value>1</value>
+			  </binding>
+		  </key>
+		  
+		  <key n="99">
+			  <name>c</name>
+			  <desc>selector visibiliity</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/selector-visible</property>
+				  <value>0</value>
+				  <value>1</value>
+			  </binding>	
+		  </key>
+		  
+		  <key n="121">
+			  <name>y</name>
+			  <desc>up cycle airspace selector</desc>
+			  <repeatable type="bool">false</repeatable>
+			  <binding>
+				  <command>property-cycle</command>
+				  <property>/OpenEagle/selector-toggle</property>
+				  <value>01</value>
+			  </binding>
+		  </key>
+		  
+		  <key n="309">
+			  <name>Keypad 5</name>
+			  <desc>Reset View.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <value>0.0</value>
+			  </binding>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-pitch-offset-deg</property>
+				  <value>0.0</value>		
+			  </binding>
+			  <mod-shift>
+				  <desc>Reset zoom to default.</desc>
+				  <binding>
+					  <command>property-assign</command>
+					  <property>/sim/current-view/field-of-view</property>
+					  <property>/sim/view/config/default-field-of-view-deg</property>
+				  </binding>
+				  <binding>
+					  <command>nasal</command>  
+					  <script>OpenEagle.OEdecrease()</script>
+				  </binding>
+				  <binding>
+					  <command>nasal</command>
+					  <script>OpenEagle.OEincrease()</script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="356">
+			  <name>Left</name>
+			  <desc>Look left.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/left-direction-deg</property>
+			  </binding>
+			  
+			  <mod-shift>
+				  <desc>Pan left.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>property-adjust</command>
+					  <property>/sim/current-view/goal-heading-offset-deg</property>
+					  <step type="double">5.0</step>
+				  </binding>
+				  
+			  </mod-shift>
+			  
+		  </key>
+		  <key n="357">
+			  <name>Up</name>
+			  <desc>Look forward.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/front-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Pan up.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>property-adjust</command>
+					  <property>/sim/current-view/goal-pitch-offset-deg</property>
+					  <step type="double">5.0</step>
+				  </binding>
+				  
+			  </mod-shift>
+		  </key>
+		  <key n="358">
+			  <name>Right</name>
+			  <desc>Look right.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/right-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Pan right.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>property-adjust</command>
+					  <property>/sim/current-view/goal-heading-offset-deg</property>
+					  <step type="double">-5.0</step>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="359">
+			  <name>Down</name>
+			  <desc>Look backwards.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/back-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Pan down.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>property-adjust</command>
+					  <property>/sim/current-view/goal-pitch-offset-deg</property>
+					  <step type="double">-5.0</step>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="360">
+			  <name>PageUp</name>
+			  <desc>Look front right.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/front-right-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Increase field of view.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>nasal</command>
+					  <script>OpenEagle.OEincrease()</script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="361">
+			  <name>PageDown</name>
+			  <desc>Look back right.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/back-right-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Decrease field of view.</desc>
+				  <repeatable type="bool">true</repeatable>
+				  <binding>
+					  <command>nasal</command>
+					  <script>OpenEagle.OEdecrease()</script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="362">
+			  <name>Home</name>
+			  <desc>Look front left.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/front-left-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Scroll views.</desc>
+				  <binding>
+					  <command>nasal</command>
+					  <script>OpenEagle.OEstepView(1)</script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="363">
+			  <name>End</name>
+			  <desc>Look back left.</desc>
+			  <binding>
+				  <command>property-assign</command>
+				  <property>/sim/current-view/goal-heading-offset-deg</property>
+				  <property>/sim/view/config/back-left-direction-deg</property>
+			  </binding>
+			  <mod-shift>
+				  <desc>Center aileron, elevator, and rudder.</desc>
+				  <binding>
+					  <command>nasal</command>
+					  <script>controls.centerFlightControls()</script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  
+		  <key n="43">
+			  <name>+</name>
+			  <desc>Increase throttle.</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>
+					  controls.incThrottle(0.025, 0.0)
+				  </script>
+			  </binding>
+			  <mod-shift>
+				  <binding>
+					  <command>nasal</command>
+					  <script>
+						  controls.incThrottle(1.0,0.0)
+					  </script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+		  <key n="45">
+			  <name>-</name>
+			  <desc>Decrease throttle.</desc>
+			  <repeatable type="bool">true</repeatable>
+			  <binding>
+				  <command>nasal</command>
+				  <script>
+					  controls.incThrottle(-0.025, 0.0)
+				  </script>
+			  </binding>
+			  <mod-shift>
+				  <binding>
+					  <command>nasal</command>
+					  <script>
+						  controls.incThrottle(-1.0,0.0)
+					  </script>
+				  </binding>
+			  </mod-shift>
+		  </key>
+	  </keyboard>
+	</input>
+	<!-- default model -->
+	<cursor type="string">Aircraft/ufo/Models/cursor.ac</cursor>
+
+	<!-- subdirs of $FG_ROOT to search models in. Comma separated, e.g. "Models,Scenery/Objects/w130n30" -->
+	<source type="string">Models</source>
+  
+	<nasal>
+		<OpenEagle> 
+		  <file>Aircraft/OpenEagle/OpenEagle.nas</file>  		
+	 </OpenEagle> 
+	</nasal>
+	
+  <position>
+    <latitude type = "double">0.0</latitude>
+    <longitude type = "double">0.0</longitude>
+  </position>
+  
+<OpenEagle>
+  <trim>
+	  <elevator_trim type = "double">0.0</elevator_trim>
+  </trim>
+  <acceleration>
+    <lateral_acc_g type = "double">0.0</lateral_acc_g>
+    <vertical_acc_g type = "double">0.0</vertical_acc_g>
+  </acceleration>    
+  <cowl_flap>
+	  <opening type = "double">0.0</opening>
+  </cowl_flap>
+  <crm114>
+    <first_prefix type = "double">0</first_prefix>
+    <second_prefix type = "double">0.0</second_prefix>
+    <third_prefix type = "double">0.0</third_prefix>
+    <arm>
+      <first_prefix type = "double">0</first_prefix>
+      <second_prefix type = "double">0.0</second_prefix>
+      <third_prefix type = "double">0.0</third_prefix>      
+    </arm>
+  </crm114>
+  <flaps>
+    <flap_setting type = "double">0</flap_setting>
+  </flaps>
+
+  <orientation>
+    <heading-magnetic-deg type = "double">0</heading-magnetic-deg>
+  </orientation>  
+  
+  <G5GPS>
+    <latitude type = "double">0</latitude>
+    <longitude type = "double">0</longitude>
+    <position_status type = "double">0</position_status>
+    <horizontal_position_error_ft type = "double">0</horizontal_position_error_ft>
+    <altitude_ft type = "double">0</altitude_ft>
+    <east_west_velocity_ft type = "double">0</east_west_velocity_ft>
+    <north_south_velocity_fps type = "double">0</north_south_velocity_fps>
+    <vertical_velocity_fps type = "double">0</vertical_velocity_fps>    
+  </G5GPS>
+  
+  
+  <weight_and_balance>
+
+    <empty_wt type="double">1151.6</empty_wt>
+    <empty_arm type="double">78.7182</empty_arm>
+    <empty_moment type="double">90651.9</empty_moment>
+
+    <crew_wt type="double">170</crew_wt>
+    <crew_arm type="double">97.48</crew_arm>
+    <crew_moment type="double">16571.6</crew_moment>
+    
+    <baggage_wt type="double">0</baggage_wt>
+    <baggage_arm type="double">126.78</baggage_arm>
+    <baggage_moment type="double">0</baggage_moment>
+
+    <fuel_gallons type="double">42</fuel_gallons>    
+    <fuel_wt type="double">252.0</fuel_wt>
+    <fuel_arm type="double">80.0</fuel_arm>
+    <fuel_moment type="double">20160.0</fuel_moment>   
+    
+    <total_wt type="double">1573.6</total_wt>
+    <total_arm type="double">80.9504</total_arm>
+    <total_moment type="double">127383.5</total_moment>   
+                
+  </weight_and_balance>
+  <engine>
+    <RPM type= "double">0</RPM>
+    <manifold-pressure-inhg type= "double"> 0.0</manifold-pressure-inhg>
+    <oil-pressure-psi type="double">0</oil-pressure-psi>
+    <oil-temperature-degf type="double">0</oil-temperature-degf>
+    <fuel-pressure-psi type="double">0</fuel-pressure-psi>
+    <cht0-degf type="double">0</cht0-degf>
+    <egt0-degf type="double">0</egt0-degf>
+    <cht1-degf type="double">0</cht1-degf>
+    <egt1-degf type="double">0</egt1-degf>
+    <cht2-degf type="double">0</cht2-degf>
+    <egt2-degf type="double">0</egt2-degf>
+    <cht3-degf type="double">0</cht3-degf>
+    <egt3-degf type="double">0</egt3-degf>    
+    <fuel-flow-gph type = "double">0</fuel-flow-gph>
+  </engine>
+  <temperature>
+    <outside-air-temp-degf type = "double" > 0 </outside-air-temp-degf>
+  </temperature>
+  <time>  
+    <G5>
+      <utc-year type="int"> 0 </utc-year>
+      <utc-month type="int"> 0 </utc-month>
+      <utc-day type="int"> 0 </utc-day>
+      <utc-hour type="int"> 0 </utc-hour>
+      <utc-minute type="int"> 0 </utc-minute>
+      <utc-second type="int"> 0 </utc-second>
+      <utc-second-fraction type="double"> 0 </utc-second-fraction>
+    </G5>        
+    <io_dummy>
+      <elapsed_sec type ="double">0.0</elapsed_sec>
+    </io_dummy>
+    <flight_seconds type = "double">0.0</flight_seconds>
+    <flight_seconds_tenths type = "double">0.0</flight_seconds_tenths>
+  </time>  
+  <airspeed>
+    <true-airspeed type = "double">0.0</true-airspeed>
+  </airspeed>
+  <altitude>
+    <density-altitude type = "double">0.0</density-altitude>
+  </altitude>	 
+  <yaw>
+    <yaw_rate_dps type = "double">0.0</yaw_rate_dps>
+  </yaw>
+  </OpenEagle>
+	  
+  <compass>
+    <compass_deg type = "double">0.0</compass_deg>
+  </compass>
+ 
+  
+</PropertyList>

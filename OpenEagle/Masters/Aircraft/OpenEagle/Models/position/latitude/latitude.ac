@@ -1,0 +1,199 @@
+AC3Db
+MATERIAL "illum" rgb 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0
+MATERIAL "gloss" rgb 1 1 1 amb 0 0 0 emis 0 0 0 spec 0.5 0.5 0.5 shi 32 trans 0.0
+MATERIAL "illum" rgb 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.0
+MATERIAL "illum" rgb 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 16  trans 0
+MATERIAL "red" rgb 1 0 0 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.0
+OBJECT world
+kids 10
+OBJECT poly
+name "latnorthsouth"
+texture "nsew.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.180
+0.0   0.240 0.180
+0.0   0.240 0.195
+0.0   0.255 0.195
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latdigit1"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.165
+0.0   0.240 0.165
+0.0   0.240 0.180
+0.0   0.255 0.180
+numsurf 1  
+SURF 0x00  
+mat 0      
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latdigit2"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.150
+0.0   0.240 0.150
+0.0   0.240 0.165
+0.0   0.255 0.165
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latdegree"
+texture  "LatLon.png"
+texrep 1.25 1
+crease 20
+numvert 4
+0.0   0.255 0.135
+0.0   0.240 0.135
+0.0   0.240 0.150
+0.0   0.255 0.150
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latmindigit0"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.120
+0.0   0.240 0.120
+0.0   0.240 0.135
+0.0   0.255 0.135
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latmindigit1"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.105
+0.0   0.240 0.105
+0.0   0.240 0.120
+0.0   0.255 0.120
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latdecimal"
+texture "LatLon.png"  
+texrep 0.70 1
+crease 20
+numvert 4
+0.0   0.255 0.090
+0.0   0.240 0.090
+0.0   0.240 0.105
+0.0   0.255 0.105
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latremdigit0"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.075
+0.0   0.240 0.075
+0.0   0.240 0.090
+0.0   0.255 0.090
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latremdigit1"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.060
+0.0   0.240 0.060
+0.0   0.240 0.075
+0.0   0.255 0.075
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0
+OBJECT poly
+name "latremdigit2"
+texture "LatLon.png"
+texrep 1 1
+crease 20
+numvert 4
+0.0   0.255 0.045
+0.0   0.240 0.045
+0.0   0.240 0.060
+0.0   0.255 0.060
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.249496638775 0.0891927108169
+3 0.194574713707 0.0891927108169
+2 0.194574713707 0.0147162750363
+1 0.249496638775 0.0147162750363
+kids 0

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+ <path>longitude.ac</path>
+
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longeastwest</object-name>
+	 <property>/OpenEagle/ew</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longdigit0</object-name>
+	 <property>/OpenEagle/longitude</property>
+	 <factor>0.001</factor>
+	 <step>100</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longdigit1</object-name>
+	 <property>/OpenEagle/longitude</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longdigit2</object-name>
+	 <property>/OpenEagle/longitude</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longmindigit0</object-name>
+	 <property>/OpenEagle/long-min</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longmindigit1</object-name>
+	 <property>/OpenEagle/long-min</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longremdigit0</object-name>
+	 <property>/OpenEagle/long-rem</property>
+	 <factor>0.001</factor>
+	 <step>100</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longremdigit1</object-name>
+	 <property>/OpenEagle/long-rem</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>longremdigit2</object-name>
+	 <property>/OpenEagle/long-rem</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ 
+ 
+ 
+</PropertyList>
+

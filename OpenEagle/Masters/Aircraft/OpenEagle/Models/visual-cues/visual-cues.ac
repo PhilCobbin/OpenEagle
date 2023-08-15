@@ -1,0 +1,32 @@
+AC3Db
+MATERIAL "illum" png 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.8
+MATERIAL "illum1" png 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.4
+MATERIAL "gloss" png 1 1 1 amb 0 0 0 emis 0 0 0 spec 0.5 0.5 0.5 shi 32 trans 0.0
+MATERIAL "illum" png 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.7
+MATERIAL "illum" png 1 1 1 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.0
+MATERIAL "ac3dmat1" png 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 16  trans 0
+MATERIAL "red" png 1 0 0 amb 0 0 0 emis 1 1 1 spec 0 0 0 shi 0 trans 0.4
+OBJECT world
+kids 1
+OBJECT poly
+name "alt-pillar"
+texture "terrain-grid.png"
+numvert 4
+-18520 -3048 0
+-18520     0 0
+     0     0 0
+     0 -3048 0
+numsurf 2
+SURF 0x00
+mat 1
+refs 3
+1 0 1
+0 0 0
+2 1 1
+SURF 0x00
+mat 1
+refs 3
+2 1 1
+0 0 0
+3 1 0
+kids 0

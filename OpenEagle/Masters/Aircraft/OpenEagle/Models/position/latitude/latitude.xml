@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+ <path>latitude.ac</path>
+
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latnorthsouth</object-name>
+	 <property>/OpenEagle/ns</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latdigit1</object-name>
+	 <property>/OpenEagle/latitude</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latdigit2</object-name>
+	 <property>/OpenEagle/latitude</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latmindigit0</object-name>
+	 <property>/OpenEagle/lat-min</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latmindigit1</object-name>
+	 <property>/OpenEagle/lat-min</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latremdigit0</object-name>
+	 <property>/OpenEagle/lat-rem</property>
+	 <factor>0.001</factor>
+	 <step>100</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latremdigit1</object-name>
+	 <property>/OpenEagle/lat-rem</property>
+	 <factor>0.01</factor>
+	 <step>10</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>latremdigit2</object-name>
+	 <property>/OpenEagle/lat-rem</property>
+	 <factor>0.1</factor>
+	 <step>1</step>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ 
+ 
+ 
+ 
+</PropertyList>
+

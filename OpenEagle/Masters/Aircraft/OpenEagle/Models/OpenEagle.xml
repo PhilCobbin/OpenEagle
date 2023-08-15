@@ -1,1 +1,164 @@
+<?xml version="1.0"?>
+<!-- 
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     /////                           filename:  OpenEagle.xml                                //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+     //////                                                                                  //////
+     //////     OpenEagle.xml: animation management for Open Eagle flight display           //////
+     //////     This file started as hacking, cutting pasting, spit, chewing gum, bandaid    //////
+     //////     and bailing wire rework of the FlightGear UFO files                          //////
+     //////     version 0.1 released 2006-10-24                                              //////
+     //////     by Philip Cobbin                                                             //////
+     //////                                                                                  //////
+     //////   location: /Flightgear/data/Aircraft/OpenEagle/Models/OpenEagle.xml           //////
+     //////                                                                                  //////
+     //////                          *****NOTICE*****                                        //////
+     //////                                                                                  //////
+     //////    This program is free software; you can redistribute it and/or modify          //////
+     //////    it under the terms of the GNU General Public License as published by          //////
+     //////    the Free Software Foundation; either version 2 of the License, or             //////
+     //////    (at your option) any later version.                                           //////
+     //////                                                                                  //////
+     //////    This program is distributed in the hope that it will be useful,               //////
+     //////    but WITHOUT ANY WARRANTY; without even the implied warranty of                //////
+     //////    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                 //////
+     //////    GNU General Public License for more details.                                  //////
+     //////                                                                                  //////
+     //////    You should have received a copy of the GNU General Public License             //////
+     //////    along with this program; if not, write to the Free Software                   //////
+     //////    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA      //////
+     //////                                                                                  //////
+     //////    Philip Cobbin; AKA Sierra Simulations & Software can be reached at:           //////
+     //////    499 Grafton Turnpike, Canaan, New Hampshire, U.S.A 03741                      //////
+     //////    Website:  http://www.cobbin.com             e-mail:  phil@cobbin.com          //////
+     //////////////////////////////////////////////////////////////////////////////////////////////
+-->
 
+<PropertyList>	
+ 
+  
+<!--  ********************************** model files ********************************  -->
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/SR-71/SR-71A-Blackbird.ac</path>
+    <offsets>
+            <x-m>19.0</x-m> 
+            <y-m> 0.0</y-m> 
+            <z-m> 0.0</z-m>  
+	    <pitch-deg>-0.0</pitch-deg>
+    </offsets>		
+  </model>
+  <model>
+    <path>Aircraft/OpenEagle/Models/SR-71/SR-71-Blackbird-Base.ac</path>
+    <offsets>
+            <x-m>19.0</x-m> 
+            <y-m> 0.0</y-m> 
+            <z-m> 0.0</z-m>  
+	    <pitch-deg>-0.0</pitch-deg>
+    </offsets>		
+  </model>
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/visual-cues/visual-cues.xml</path>
+    <offsets>
+      <x-m>0.0</x-m> 
+      <y-m> 0.0</y-m> 
+      <z-m>-10.0</z-m>  
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>		
+  </model>
+  
+  <!-- Instruments -->
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/heading-true.xml</path>  
+      <offsets>
+        <x-m>-0.4846</x-m> 
+        <y-m> 0.0</y-m>
+        <z-m> 2.03750</z-m>
+	<pitch-deg>-0.0</pitch-deg>
+      </offsets>
+  </model>                        
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/altitude.xml</path>  
+    <offsets>
+      <x-m>-0.5000</x-m>  
+      <y-m>0.395</y-m>
+      <z-m>1.762</z-m>  
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/AGL.xml</path>  
+    <offsets>
+      <x-m>-0.5000</x-m>  
+      <y-m>0.2975</y-m>
+      <z-m>1.762</z-m>  
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/VSI.xml</path>  
+    <offsets>
+      <x-m>-0.5000</x-m>  
+      <y-m>-0.3075</y-m>
+      <z-m>1.762</z-m>  
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/pitch.xml</path>  
+    <offsets>
+      <x-m>-0.5000</x-m>  
+      <y-m>0.0</y-m>
+      <z-m>1.762</z-m>  
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/roll/roll.ac</path>
+    <offsets>
+      <x-m>-0.150</x-m>
+      <y-m>0.0</y-m>
+      <z-m>1.762</z-m>
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/OpenEagle/Models/HUD/airspeed.xml</path>  
+    <offsets>
+      <x-m>-0.5000</x-m>  
+      <y-m>-0.395</y-m>
+      <z-m>1.762</z-m>  
+      <pitch-deg>-0.0</pitch-deg>      
+    </offsets>
+  </model>
+
+  <model>
+	  <path>Aircraft/OpenEagle/Models/position/latitude/latitude.xml</path>
+	  <offsets>
+            <x-m>-0.5000</x-m> 
+            <y-m>-0.20</y-m>
+            <z-m>1.750</z-m>
+	    <pitch-deg>-0.0</pitch-deg>
+	  </offsets>
+	</model>
+	<model>
+	  <path>Aircraft/OpenEagle/Models/position/longitude/longitude.xml</path>
+	  <offsets>
+  	    <x-m>-0.5000</x-m> 
+            <y-m>0.200</y-m>
+            <z-m>1.7500</z-m>
+	    <pitch-deg>-0.0</pitch-deg>
+	  </offsets>
+	</model>
+
+
+</PropertyList>

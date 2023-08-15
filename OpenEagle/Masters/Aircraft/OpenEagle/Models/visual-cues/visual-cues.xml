@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <path>visual-cues.ac</path>
+<!--
+ <animation>
+	 <type>select</type>
+	 <object-name>alt-pillar</object-name>
+             <condition>
+ 		<or>
+			<equals>
+				 <property>/sim/current-view/name</property>
+				 <value>Open Eagle overhead view</value>
+			 </equals>
+
+			<equals>
+				 <property>/sim/current-view/name</property>
+				 <value>Open Eagle chase right offset view</value>
+			 </equals>
+
+                         </or>                         
+	
+	 </condition>
+         
+ </animation>
+ -->
+
+
+ <animation>
+	 <type>rotate</type>
+	 <object-name>alt-pillar</object-name>
+	 <property>/orientation/roll-deg</property>
+	 <factor>1</factor>
+	 <axis>
+		 <x>1</x>
+		 <y>0</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ <animation>	
+	 <type>rotate</type>
+	 <object-name>alt-pillar</object-name>
+	 <property>/orientation/pitch-deg</property>
+	 <factor>-1</factor>
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>			
+ </animation>
+  
+</PropertyList>
+

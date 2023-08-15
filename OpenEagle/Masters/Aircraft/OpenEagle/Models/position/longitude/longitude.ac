@@ -1,0 +1,228 @@
+AC3Db
+MATERIAL "illum.001" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
+MATERIAL "illum.002" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
+MATERIAL "illum" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
+MATERIAL "illum.003" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
+OBJECT world
+name "Blender_exporter_v3.3__longitude1.ac"
+kids 11
+OBJECT poly
+name "longdecimal"
+data 16
+longdecimal.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.15
+0 0.24 -0.15
+0 0.24 -0.135
+0 0.255 -0.135
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0.174648 0.089193
+3 0.136202 0.089193
+2 0.136202 0.014716
+1 0.174648 0.014716
+kids 0
+OBJECT poly
+name "longdegree"
+data 15
+longdegree.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.105
+0 0.24 -0.105
+0 0.24 -0.09
+0 0.255 -0.09
+numsurf 1
+SURF 0X0
+mat 1
+refs 4
+0 0.311871 0.089193
+3 0.243218 0.089193
+2 0.243218 0.014716
+1 0.311871 0.014716
+kids 0
+OBJECT poly
+name "longdigit0"
+data 15
+longdigit0.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.06
+0 0.24 -0.06
+0 0.24 -0.045
+0 0.255 -0.045
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longdigit1"
+data 15
+longdigit1.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.075
+0 0.24 -0.075
+0 0.24 -0.06
+0 0.255 -0.06
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longdigit2"
+data 15
+longdigit2.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.09
+0 0.24 -0.09
+0 0.24 -0.075
+0 0.255 -0.075
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longeastwest"
+data 17
+longeastwest.mesh
+crease 20.0
+texture "nsew.png"
+numvert 4
+0 0.255 -0.044
+0 0.24 -0.044
+0 0.24 -0.014
+0 0.255 -0.014
+numsurf 1
+SURF 0X0
+mat 3
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longmindigit0"
+data 18
+longmindigit0.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.12
+0 0.24 -0.12
+0 0.24 -0.105
+0 0.255 -0.105
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longmindigit1"
+data 18
+longmindigit1.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.135
+0 0.24 -0.135
+0 0.24 -0.12
+0 0.255 -0.12
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longremdigit0"
+data 18
+longremdigit0.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.165
+0 0.24 -0.165
+0 0.24 -0.15
+0 0.255 -0.15
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longremdigit1"
+data 18
+longremdigit1.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.18
+0 0.24 -0.18
+0 0.24 -0.165
+0 0.255 -0.165
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0
+OBJECT poly
+name "longremdigit2"
+data 18
+longremdigit2.mesh
+crease 20.0
+texture "LatLon.png"
+numvert 4
+0 0.255 -0.195
+0 0.24 -0.195
+0 0.24 -0.18
+0 0.255 -0.18
+numsurf 1
+SURF 0X0
+mat 2
+refs 4
+0 0.249497 0.089193
+3 0.194575 0.089193
+2 0.194575 0.014716
+1 0.249497 0.014716
+kids 0

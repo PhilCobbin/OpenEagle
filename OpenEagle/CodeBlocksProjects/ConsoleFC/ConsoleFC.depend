@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1644688569 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_conversion/data_conversion.cxx
+	<ctype.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	"data_conversion.hxx"
+	"../3rdparty/constants.h"
+
+1644688569 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_conversion/data_conversion.hxx
+	<string.h>
+	<string>
+
+1610933056 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/3rdparty/constants.h
+	<cmath>
+
+1618592878 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.cxx
+	"../system_io/system_io.hxx"
+	<errno.h>
+
+1619222568 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.hxx
+	<string.h>
+	<string>
+
+1688698487 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/ConsoleFC/main.cpp
+	<iostream>
+	"../data_mgr/data_mgr.hxx"
+
+1689025738 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/data_mgr.cxx
+	"../data_mgr/data_mgr.hxx"
+	"../3rdparty/constants.h"
+	"../system_io/system_io.hxx"
+	"../data_conversion/data_conversion.hxx"
+	<sched.h>
+	<string>
+	<stdio.h>
+	<errno.h>
+	<netdb.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+
+1688756264 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/data_mgr.hxx
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<termios.h>
+	<signal.h>
+	<sys/utsname.h>
+	<time.h>
+	<string>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	"../TimeStrings/TimeStrings.hxx"
+	"../airport/airport.hxx"
+	"../data_mgr/EngineMonitor.hxx"
+	"../data_mgr/FC10FuelComputer.hxx"
+	"../data_mgr/GPS.hxx"
+	"../data_mgr/Garmin_G5.hxx"
+	"../data_mgr/Manual.hxx"
+	"../data_mgr/OpenEagleExt.hxx"
+
+1643845232 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/TimeStrings/TimeStrings.hxx
+	<string>
+
+1689577440 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/airport/airport.hxx
+	<stdio.h>
+	"../system_io/system_io.hxx"
+	"../avl_tree/avl_tree.hxx"
+	"../OpenEaglePaths/OpenEaglePaths.hxx"
+
+1618588848 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/avl_tree/avl_tree.hxx
+
+1689547921 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/OpenEaglePaths/OpenEaglePaths.hxx
+	<string>
+
+1689745822 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/GPS.hxx
+
+1689751875 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/Garmin_G5.hxx
+
+1689750357 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/EngineMonitor.hxx
+
+1689799899 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/FC10FuelComputer.hxx
+
+1687372732 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/OpenEagleExt.hxx
+
+1686863153 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/Manual.hxx
+
+1689750709 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/EngineMonitor.cxx
+	"data_mgr.hxx"
+	"EngineMonitor.hxx"
+
+1689747832 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/GPS.cxx
+	"data_mgr.hxx"
+	"../3rdparty/constants.h"
+
+1689802490 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/FC10FuelComputer.cxx
+	"data_mgr.hxx"
+
+1689794282 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/data_mgr/Garmin_G5.cxx
+	"data_mgr.hxx"
+	<math.h>
+	"../3rdparty/constants.h"
+

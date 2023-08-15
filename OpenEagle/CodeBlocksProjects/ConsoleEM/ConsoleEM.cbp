@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ConsoleEM" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Programs/EM_console" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ConsoleEM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../3rdparty/constants.h" />
+		<Unit filename="../data_conversion/data_conversion.cxx" />
+		<Unit filename="../data_conversion/data_conversion.hxx" />
+		<Unit filename="../data_mgr/EngineMonitor.cxx" />
+		<Unit filename="../data_mgr/EngineMonitor.hxx" />
+		<Unit filename="../data_mgr/FC10FuelComputer.cxx" />
+		<Unit filename="../data_mgr/FC10FuelComputer.hxx" />
+		<Unit filename="../data_mgr/GPS.cxx" />
+		<Unit filename="../data_mgr/GPS.hxx" />
+		<Unit filename="../data_mgr/Garmin_G5.cxx" />
+		<Unit filename="../data_mgr/Garmin_G5.hxx" />
+		<Unit filename="../data_mgr/Manual.hxx" />
+		<Unit filename="../data_mgr/OpenEagleExt.hxx" />
+		<Unit filename="../data_mgr/data_mgr.cxx" />
+		<Unit filename="../data_mgr/data_mgr.hxx" />
+		<Unit filename="../system_io/system_io.cxx" />
+		<Unit filename="../system_io/system_io.hxx" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

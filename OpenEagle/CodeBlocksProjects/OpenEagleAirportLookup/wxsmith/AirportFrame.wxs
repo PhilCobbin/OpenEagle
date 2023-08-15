@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="AirportFrame">
+		<title>Airport Data</title>
+		<centered>1</centered>
+		<size>600,650</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxPanel" name="ID_PANEL_AIRPORT_FRAME" variable="Panel_AirportFrame" member="yes">
+			<pos>104,56</pos>
+			<size>580,500</size>
+			<object class="wxNotebook" name="ID_NOTEBOOK_AIRPORT" variable="Notebook_Airport" member="yes">
+				<pos>16,16</pos>
+				<size>570,620</size>
+				<handler function="OnNotebook_AirportPageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_AIRPORT" variable="Panel_Airport" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_AIRPORT" variable="TextCtrl_Airport" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Airport</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_ATT" variable="Panel_Att" member="yes">
+						<font>
+							<size>10</size>
+							<style>normal</style>
+							<weight>normal</weight>
+							<underlined>0</underlined>
+							<family>teletype</family>
+							<face>Miriam Mono CLM</face>
+						</font>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_ATTENDENCE" variable="TextCtrl_Attendance" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Attendance</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_RWY" variable="Panel_Rwy" member="yes">
+						<font>
+							<size>10</size>
+							<style>normal</style>
+							<weight>normal</weight>
+							<underlined>0</underlined>
+							<family>teletype</family>
+							<face>Miriam Mono CLM</face>
+						</font>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_RUNWAY" variable="TextCtrl_Runway" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Runway</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_ArrSys" variable="PanelArrSys" member="yes">
+						<font>
+							<size>10</size>
+							<style>normal</style>
+							<weight>normal</weight>
+							<underlined>0</underlined>
+							<family>teletype</family>
+							<face>Miriam Mono CLM</face>
+						</font>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_ARRESTING_SYSTEMS" variable="TextCtrl_ArrestingSystems" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Arresting System(s)</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_Remarks" variable="PanelRemarks" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_REMARKS" variable="TextCtrlRemarks" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Remarks</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_TOWER" variable="PanelTower" member="yes">
+						<size>550,570</size>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_TOWER" variable="TextCtrlTower" member="yes">
+							<value>Text</value>
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Tower</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_HOURS" variable="Panel_Hours" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_HOURS" variable="TextCtrl_Hours" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Hours</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_FREQUENCIES" variable="Panel_Frequencies" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_FREQUENCIES" variable="TextCtrl_Frequencies" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Frequencies</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_SERVICES" variable="Panel_Services" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_SERVICES" variable="TextCtrl_Services" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Services</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_RADAR" variable="Panel_Radar" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_RADAR" variable="TextCtrl_Radar" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Radar</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_REMARKS" variable="Panel_Remarks" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_TWR_REMARKS" variable="TextCtrl_Remarks" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxTE_CHARWRAP|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Remarks</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_SATELLITE" variable="Panel_Satellite" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_SATELLITE" variable="TextCtrlSatellite" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Satellite</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_CLASS_BCDE" variable="Panel_Class_BCDE" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_CLASS_BCDE" variable="TextCtrl_Class_BCDE" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Class BCDE</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_ATIS" variable="Panel_ATIS" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_ATIS" variable="TextCtrl_ATIS" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>ATIS</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_AWOS" variable="Panel_AWOS" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_AWOS" variable="TextCtrl_AWOS" member="yes">
+							<value>Text</value>
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>AWOS</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_ILS" variable="Panel_ILS" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_ILS" variable="TextCtrl_ILS" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>ILS</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_LOCALIZER" variable="Panel_Localizer" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_LOCALIZER" variable="TextCtrl_Localizer" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Localizer</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_GLIDE_SLOPE" variable="Panel_GlideSlope" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_GLIDE_SLOPE" variable="TextCtrl_GlideSlope" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Glide Slope</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_DMD" variable="Panel_DME" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_DME" variable="TextCtrl_DME" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>DME</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_MARKER_BEACON" variable="PanelMarkerBeacon" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_MARKER_BEACON" variable="TextCtrl_MarkerBeacon" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>Marker Beacon</label>
+				</object>
+				<object class="notebookpage">
+					<object class="wxPanel" name="ID_PANEL_ILS_REMARKS" variable="Panel_ILS_Remarks" member="yes">
+						<object class="wxTextCtrl" name="ID_TEXTCTRL_ILS_REMARKS" variable="TextCtrl_ILS_Remarks" member="yes">
+							<pos>5,5</pos>
+							<size>555,570</size>
+							<font>
+								<size>10</size>
+								<style>normal</style>
+								<weight>normal</weight>
+								<underlined>0</underlined>
+								<family>teletype</family>
+								<face>Miriam Mono CLM</face>
+							</font>
+							<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL|wxHSCROLL</style>
+						</object>
+					</object>
+					<label>ILS Remarks</label>
+				</object>
+			</object>
+		</object>
+	</object>
+</wxsmith>

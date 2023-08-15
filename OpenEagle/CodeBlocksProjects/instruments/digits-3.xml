@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	
+ <path>asi.ac</path>
+
+ 
+  
+
+ 
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>asidigit0</object-name>
+	 <property>/velocities/airspeed-kt</property>
+	 <factor>0.00001</factor>
+	 <step>100</step> 
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ <animation>
+	 
+	 <type>textranslate</type>
+	 <object-name>asidigit1</object-name>
+	 <property>/velocities/airspeed-kt</property>
+	 <factor>0.0001</factor>
+	 <step>10</step> 
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ 
+ <animation>
+	 <type>textranslate</type>
+	 <object-name>asidigit2</object-name>
+	 <property>/velocities/airspeed-kt</property>
+	 <factor>0.001</factor>
+	 <step>1</step> 
+	 <axis>
+		 <x>0</x>
+		 <y>1</y>
+		 <z>0</z>
+	 </axis>
+ </animation>
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</PropertyList>
+

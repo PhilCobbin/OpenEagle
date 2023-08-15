@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1617126815 source:/home/phil/Desktop/OpenEagle-01-2021/instruments/instruments.cxx
+	<string.h>
+	<string>
+	"instruments.hxx"
+	<stdio.h>
+	<cstddef>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1617125246 /home/phil/Desktop/OpenEagle-01-2021/instruments/instruments.hxx
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string>
+	<sstream>
+	<stdio.h>
+	"../system_io/system_io.hxx"
+	"../avl_tree/avl_tree.hxx"
+	"../constants.h"
+
+1611702182 /home/phil/Desktop/OpenEagle-01-2021/system_io/system_io.hxx
+	<string.h>
+	<string>
+
+1225124971 /home/phil/Desktop/OpenEagle-01-2021/avl_tree/avl_tree.hxx
+
+1611703230 source:/home/phil/Desktop/OpenEagle-01-2021/system_io/system_io.cxx
+	"../system_io/system_io.hxx"
+	<errno.h>
+
+1617150168 source:/home/phil/Desktop/OpenEagle-01-2021/HUD/main.cpp
+	<iostream>
+	"../instruments/instruments.hxx"
+
+1610933057 /home/phil/Desktop/OpenEagle-01-2021/constants.h
+	<cmath>
+
+1618592878 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.cxx
+	"../system_io/system_io.hxx"
+	<errno.h>
+
+1619222568 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.hxx
+	<string.h>
+	<string>
+
+1688781438 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/instruments/instruments.cxx
+	<string.h>
+	<string>
+	"instruments.hxx"
+	<stdio.h>
+	<cstddef>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string>
+	<sstream>
+
+1647916308 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/instruments/instruments.hxx
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	<string>
+	<sstream>
+	<stdio.h>
+	"../system_io/system_io.hxx"
+	"../avl_tree/avl_tree.hxx"
+	"../3rdparty/constants.h"
+
+1618588848 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/avl_tree/avl_tree.hxx
+
+1610933056 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/3rdparty/constants.h
+	<cmath>
+
+1688780684 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/HUD/main.cpp
+	<iostream>
+	"../instruments/instruments.hxx"
+

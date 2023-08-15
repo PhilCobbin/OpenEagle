@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="InformationFrame">
+		<title>Information</title>
+		<centered>1</centered>
+		<size>700,700</size>
+		<font>
+			<size>20</size>
+			<style>normal</style>
+			<weight>bold</weight>
+			<underlined>0</underlined>
+			<family>teletype</family>
+			<face>Miriam Mono CLM</face>
+		</font>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxPanel" name="ID_PANEL_INFORMATION" variable="PanelInformation" member="yes">
+			<pos>112,104</pos>
+			<size>700,700</size>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_BODY" variable="TextCtrlBody" member="yes">
+				<pos>10,10</pos>
+				<size>680,680</size>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_MULTILINE|wxTE_READONLY|wxVSCROLL</style>
+			</object>
+		</object>
+	</object>
+</wxsmith>

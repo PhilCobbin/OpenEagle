@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagleAirportLookupFrame">
+		<title>Lookup Airport/Runway Information</title>
+		<centered>1</centered>
+		<size>670,360</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>136,8</pos>
+			<size>565,210</size>
+			<handler function="OnPanel1Paint" entry="EVT_PAINT" />
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_AIRPORT_ID" variable="TextCtrlAirport_ID" member="yes">
+				<value>FLG</value>
+				<pos>128,30</pos>
+				<size>80,40</size>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_PROCESS_ENTER</style>
+				<handler function="OnTextCtrlAirport_IDText2" entry="EVT_TEXT" />
+				<handler function="OnTextCtrlAirport_IDTextEnter" entry="EVT_TEXT_ENTER" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_BY_STATE" variable="Button_LookupByState" member="yes">
+				<label>Lookup by State</label>
+				<pos>230,30</pos>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>250,40</minsize>
+				<handler function="OnButtonLookupAirportClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_AIRPORT" variable="StaticTextAirport" member="yes">
+				<label>Airport</label>
+				<pos>10,30</pos>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>120,40</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_SEE_FAA_DOT_GOV" variable="StaticText_Note_SeeFAA_Dot_Gov" member="yes">
+				<label>https://www.faa.gov/air__traffic/flight__info/aeronav/aero__data/NASR__Subscription/&#x0A;</label>
+				<pos>8,8</pos>
+				<size>560,20</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_28_DAY_NASR" variable="StaticText_22_Day_NASR" member="yes">
+				<label>28 Day NASR Subscription</label>
+				<pos>488,40</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_ICAO_ID" variable="TextCtrl_ICAO_ID" member="yes">
+				<value>KFLG</value>
+				<pos>110,75</pos>
+				<size>100,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_ICAO_ID" variable="StaticText_ICAO_ID" member="yes">
+				<label>ICAO</label>
+				<pos>10,75</pos>
+				<size>70,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>100,40</minsize>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_APT_NAME" variable="TextCtrl_Apt_Name" member="yes">
+				<value>Flagstaff Pulliam</value>
+				<pos>10,130</pos>
+				<size>630,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_APT_CITY_STATE" variable="TextCtrl_AptCitySt" member="yes">
+				<value>Flagstaff, AZ</value>
+				<pos>10,180</pos>
+				<size>300,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_APT_ELEVATION" variable="TextCtrl_Apt_Elevation" member="yes">
+				<value>7015</value>
+				<pos>170,230</pos>
+				<size>120,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_ELEVATION" variable="StaticText_Elevation" member="yes">
+				<label>Elevation</label>
+				<pos>8,240</pos>
+				<size>150,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>150,30</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_TP_ALTITUDE" variable="StaticText_TP_Altitude" member="yes">
+				<label>T.P.&#x0A;Altitude</label>
+				<pos>10,280</pos>
+				<size>120,100</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>140,60</minsize>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_TP_ALT" variable="TextCtrl_TP_Alt" member="yes">
+				<value>8000</value>
+				<pos>170,285</pos>
+				<size>120,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_APT_INFORMATION" variable="ButtonAptInformation" member="yes">
+				<label>Information</label>
+				<pos>350,250</pos>
+				<size>200,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<handler function="OnButtonAptInformationClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_APT_FREQUENCIES" variable="ButtonAptFrequencies" member="yes">
+				<label>Frequencies</label>
+				<pos>350,300</pos>
+				<size>200,40</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<handler function="OnButtonAptFrequenciesClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxListBox" name="ID_LISTBOX_APT_RUNWAY" variable="ListBoxAptRunway" member="yes">
+				<content>
+					<item>99X</item>
+				</content>
+				<pos>590,180</pos>
+				<size>70,160</size>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<style>wxLB_SINGLE|wxVSCROLL</style>
+				<handler function="OnListBoxAptRunwayDClick" entry="EVT_LISTBOX_DCLICK" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_RUNWAYS" variable="StaticTextRunways" member="yes">
+				<label>Runways -&gt;</label>
+				<pos>420,180</pos>
+				<enabled>0</enabled>
+				<hidden>1</hidden>
+				<font>
+					<size>20</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>teletype</family>
+					<face>Miriam Mono CLM</face>
+				</font>
+				<minsize>160,30</minsize>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DO_FULL_NASR" variable="CheckBox_DoFullNASR" member="yes">
+				<label>Full NASR Database</label>
+				<pos>240,88</pos>
+			</object>
+		</object>
+		<object class="wxDirDialog" variable="DirDialogLookupAirport" member="yes">
+			<message>Select directory</message>
+		</object>
+	</object>
+</wxsmith>

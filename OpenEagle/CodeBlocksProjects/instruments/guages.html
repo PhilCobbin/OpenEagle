@@ -1,0 +1,498 @@
+<!--
+/***************************************************************
+ * Name:      guages.html
+ * Purpose:   facilitate brower use to display instruments with flightgear
+ * Author:    Philip Cobbin (phil@cobbin.com)
+ * Created:   2021-04-11
+ * Copyright: Philip Cobbin (cobbin.com)
+ * License    GPLv3 see: https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Library General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later versio
+ *
+ * This library is distributed in the hope that it will be useful
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * Library General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public Lice
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ **************************************************************/
+-->
+<html>
+  <head>
+    <title>Guages</title>
+    <meta content="">
+    <style></style>
+    <title>Guages</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../javascript/RGraph/libraries/RGraph.common.core.js"></script>
+    <script src="../../javascript/RGraph/libraries/RGraph.svg.common.core.js"></script>
+    <script src="../../javascript/RGraph/libraries/RGraph.svg.gauge.js"></script>
+    <script src="../../javascript/RGraph/libraries/RGraph.meter.js"></script>
+    <script src="../../javascript/RGraph/libraries/RGraph.common.dynamic.js"></script>
+  </head>
+  <body>
+    <article>
+      <canvas id="guageRPM" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+    <article>
+      <canvas id="guageMP" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>  
+    <article>
+      <canvas id="guageFF" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>  
+    <article>
+      <canvas id="guageFOB" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+    <article>
+      <canvas id="guageFP" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+    <article>
+      <canvas id="guageOP" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+    <article>
+      <canvas id="guageOT" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+    <article>
+      <canvas id="guageCHT" width="155" height="90">
+        [No canvas support]
+      </canvas>
+    </article>
+EGT <span id="EGT"></span> F°
+    <script>
+        
+     var RPM = new RGraph.Meter({
+        id: 'guageRPM',
+        min: 0,
+        max: 2700,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            labelsValueUnitsPost: '\nRPM',
+            labelsValueSize: 10,
+            textSize: 1,
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            segmentsRadiusStart: 80,
+            needleRadius: 56,
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+            colorsRanges: [[0,2650, 'green'],[2650,2700, 'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();      
+      
+      var ManifoldPressure = new RGraph.Meter({
+        id: 'guageMP',
+        min: 0,
+        max: 45,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 1,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            labelsValueUnitsPost: '\nMP inHg',
+            labelsValueSize: 10,
+            textSize: 1,
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            segmentsRadiusStart: 80,
+            needleRadius: 56,
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+            colorsRanges: [[0,15,'yellow'],[15,35,'green'],[35,45, 'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();
+
+     var FuelFlowGPH = new RGraph.Meter({
+        id: 'guageFF',
+        min: 0,
+        max: 16,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 1,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            labelsValueUnitsPost: '\nFF gph',
+            labelsValueSize: 10,
+            textSize: 1,
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            segmentsRadiusStart: 80,
+            needleRadius: 56,
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+            colorsRanges: [[0,5,'yellow'],[5,13,'green'],[13,16, 'yellow']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();
+      
+     var FuelFobGal = new RGraph.Meter({
+        id: 'guageFOB',
+        min: 0,
+        max: 42,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 1,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            labelsValueUnitsPost: '\nFOB gal',
+            labelsValueSize: 10,
+            textSize: 1,
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            segmentsRadiusStart: 80,
+            needleRadius: 56,
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+            colorsRanges: [[0,5,'red'],[5,20,'yellow'],[20,42, 'green']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();
+
+     var FuelPressure = new RGraph.Meter({
+        id: 'guageFP',
+        min: 0,
+        max: 40,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            
+            labelsValueUnitsPost: '\nFuel psi',
+            labelsValueSize: 10,
+            textSize: 1,
+
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+   
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            
+            segmentsRadiusStart: 80,
+            needleRadius: 60,
+            
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+
+            colorsRanges: [[0,15,'yellow'],[15,35,'green'],[35,40, 'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();       
+      
+      var OilPressure = new RGraph.Meter({
+        id: 'guageOP',
+        min: 0,
+        max: 100,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            
+            labelsValueUnitsPost: '\nOil psi',
+            labelsValueSize: 10,
+            textSize: 1,
+
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+   
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            
+            segmentsRadiusStart: 80,
+            needleRadius: 60,
+            
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+
+            colorsRanges: [[0,25, 'red'],[25,55,'yellow'],[55,95, 'green'],[94,100, 'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();
+           
+      var OilTemperature = new RGraph.Meter({
+        id: 'guageOT',
+        min: 0,
+        max: 250,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            
+            labelsValueUnitsPost: '\nOil F°',
+            labelsValueSize: 10,
+            textSize: 1,
+
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+   
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            
+            segmentsRadiusStart: 80,
+            needleRadius: 60,
+            
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+
+            colorsRanges: [[0,100,'red'],[100,243,'yellow'],[180,245, 'green'],[245,250, 'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+     }).draw();
+
+     var ChtTemperature = new RGraph.Meter({
+        id: 'guageCHT',
+        min: 0,
+        max: 500,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            
+            labelsValueUnitsPost: '\nCHT F°',
+            labelsValueSize: 10,
+            textSize: 1,
+
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+   
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            
+            segmentsRadiusStart: 80,
+            needleRadius: 60,
+            
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+
+            colorsRanges: [[0,150,'yellow'],[150,400,'green'],[400,495,'yellow'],[495,500,'red']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+     }).draw();  
+/**
+     var EgtTemperature = new RGraph.Meter({
+        id: 'guageEGT',
+        min: 0,
+        max: 1500,
+        value: 0,
+        options: {
+            labelsValue: true,
+            labelsValueDecimals: 0,
+            labelsValueBounding: false,
+            labelsCentered: true,
+            labelsOffsetRadius: 0,
+            
+            labelsValueUnitsPost: '\nEGT F °',
+            labelsValueSize: 14,
+            textSize: 1,
+
+            colorsGreenColor: '#afa',
+            colorsGreenWidth: 16,
+            colorsRedWidth: 16,
+            colorsYellowWidth: 16,            
+   
+            anglesStart: RGraph.PI - 0.0,
+            anglesEnd: RGraph.TWOPI - 0.5,
+
+            linewidthSegments: 0,
+            colorsStroke: 'white',
+            
+            segmentsRadiusStart: 80,
+            needleRadius: 60,
+            
+            border: 1,
+            tickmarksSmallCount: 0,
+            tickmarksLargeCount: 0,
+
+            colorsRanges: [[0,1500,'green']],
+            centerx: 80,
+            centery: 85,
+            radius: 80,
+            adjustable: true,
+            needleHeadWidth: .05
+        }
+      }).draw();
+**/      
+      const apiEngineMonitor_URL = 'http://localhost:8080/json/OpenEagle/engine/';
+      async function getEngineMonitor() {
+        const response = await fetch(apiEngineMonitor_URL);
+        const data = await response.json();
+
+        const { path, name, value, type, index, nchildren, children} = data;
+
+        console.log('children:',children,'<--');
+        
+        RPM.value               = children[0].value;
+          RPM.grow();
+       
+        ManifoldPressure.value  = children[1].value;
+          ManifoldPressure.grow();
+          
+        FuelPressure.value      = children[4].value;
+          FuelPressure.grow();
+          
+        OilPressure.value       = children[2].value;
+          OilPressure.grow();
+          
+        OilTemperature.value    = children[3].value;
+          OilTemperature.grow();
+
+        ChtTemperature.value    = children[5].value;
+          ChtTemperature.grow();
+
+        document.getElementById('EGT').textContent = children[6].value;  
+          
+        FuelFlowGPH.value       = children[13].value;
+          FuelFlowGPH.grow();
+
+        }  
+      getEngineMonitor();
+      setInterval(getEngineMonitor,1000);       
+
+      const apiFobMonitor_URL = 'http://localhost:8080/json/OpenEagle/weight_and_balance/';
+      async function getFOB() {
+        const response = await fetch(apiFobMonitor_URL);
+        const data = await response.json();
+
+        const { path, name, value, type, index, nchildren, children} = data;
+        FuelFobGal.value    = children[9].value;
+          FuelFobGal.grow();
+
+        console.log('FOBchildren:',children,'<--');
+
+        }
+      getFOB();
+      setInterval(getFOB,1000);
+
+    </script>      
+  </body>
+</html>
+
+
+

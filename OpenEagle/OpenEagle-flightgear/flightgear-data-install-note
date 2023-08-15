@@ -1,0 +1,27 @@
+So, initially you would either install flightgear via:
+  sudo dnf install FlightGear
+  sudo dnf install FlightGear-data
+or, using gnome-software.
+
+If using gnome-software you will find flightgear under the heading of games.
+It is after all a flight simulator.
+
+But, when installing using the above method(s) on a linux system the data files
+will be typically installed at
+  /usr/share/flightgear
+
+This places the installed data in the root partition.  We want the data in the
+home partition.
+
+Thus, after you install flightgear and flightgear-data, you will want to copy the
+contents of
+
+  /usr/share/flightgear
+
+to the THIS directory on your Desktop
+
+After copying the data into OpenEagle-flightgear you will find there is a
+very small subset of terrain data.  See the install note under the Masters 
+directory for downloading and installing Objects and Terrain.
+
+

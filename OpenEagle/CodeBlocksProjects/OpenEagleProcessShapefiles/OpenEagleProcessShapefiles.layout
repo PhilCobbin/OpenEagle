@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="OpenEagleProcessShapefilesMain.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1943" topLine="50" />
+		</Cursor>
+	</File>
+	<File name="../airport/airport.cxx" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="184586" topLine="2330" />
+		</Cursor>
+	</File>
+	<File name="../U_S_Special_Use_Airspace/sua_airspace.hxx" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1777" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="../data_conversion/data_conversion.cxx" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../data_conversion/data_conversion.hxx" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../U_S_Special_Use_Airspace/sua_airspace.cxx" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13433" topLine="294" />
+		</Cursor>
+	</File>
+	<File name="../Airspace_Boundary/airspace_boundary.hxx" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3245" topLine="99" />
+		</Cursor>
+	</File>
+	<File name="../OpenEaglePaths/OpenEaglePaths.hxx" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1396" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="../airport/airport.hxx" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="54784" topLine="1862" />
+		</Cursor>
+	</File>
+	<File name="OpenEagleProcessShapefilesMain.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13850" topLine="156" />
+		</Cursor>
+	</File>
+	<File name="../Airspace_Boundary/airspace_boundary.cxx" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="472" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="../Class_Airspace/class_airspace.cxx" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5211" topLine="136" />
+		</Cursor>
+	</File>
+	<File name="../shapefile/shapefile.cxx" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3951" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="../system_io/system_io.cxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1622" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="../OpenEaglePaths/OpenEaglePaths.cxx" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2142" topLine="77" />
+		</Cursor>
+	</File>
+	<File name="../system_io/system_io.hxx" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="506" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../shapefile/shapefile.hxx" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4650" topLine="81" />
+		</Cursor>
+	</File>
+	<File name="../Class_Airspace/class_airspace.hxx" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1648" topLine="44" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

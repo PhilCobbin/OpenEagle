@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenEaglePlayBack" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Programs/OpenEaglePlayBack" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OpenEaglePlayBack" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="../data_conversion/data_conversion.cxx" />
+		<Unit filename="../data_conversion/data_conversion.hxx" />
+		<Unit filename="../data_mgr/EngineMonitor.cxx" />
+		<Unit filename="../data_mgr/EngineMonitor.hxx" />
+		<Unit filename="../data_mgr/FC10FuelComputer.cxx" />
+		<Unit filename="../data_mgr/FC10FuelComputer.hxx" />
+		<Unit filename="../data_mgr/GPS.cxx" />
+		<Unit filename="../data_mgr/GPS.hxx" />
+		<Unit filename="../data_mgr/Garmin_G5.cxx" />
+		<Unit filename="../data_mgr/Garmin_G5.hxx" />
+		<Unit filename="../data_mgr/Manual.hxx" />
+		<Unit filename="../data_mgr/OpenEagleExt.cxx" />
+		<Unit filename="../data_mgr/OpenEagleExt.hxx" />
+		<Unit filename="../data_mgr/data_mgr.cxx" />
+		<Unit filename="../data_mgr/data_mgr.hxx" />
+		<Unit filename="OpenEaglePlayBackApp.cpp" />
+		<Unit filename="OpenEaglePlayBackApp.h" />
+		<Unit filename="OpenEaglePlayBackMain.cpp" />
+		<Unit filename="OpenEaglePlayBackMain.h" />
+		<Unit filename="wxsmith/OpenEaglePlayBackframe.wxs" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="OpenEaglePlayBackApp.cpp" main="OpenEaglePlayBackFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/OpenEaglePlayBackframe.wxs" src="OpenEaglePlayBackMain.cpp" hdr="OpenEaglePlayBackMain.h" fwddecl="0" i18n="1" name="OpenEaglePlayBackFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

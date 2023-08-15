@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenEagleProcessShapefiles" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Programs/OpenEagleProcessShapefiles" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/OpenEagleProcessShapefiles" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="../3rdparty/shapelib-1.5.0/dbfopen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/shapelib-1.5.0/safileio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/shapelib-1.5.0/sbnsearch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/shapelib-1.5.0/shapefil.h" />
+		<Unit filename="../3rdparty/shapelib-1.5.0/shpopen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/shapelib-1.5.0/shptree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Airspace_Boundary/airspace_boundary.cxx" />
+		<Unit filename="../Airspace_Boundary/airspace_boundary.hxx" />
+		<Unit filename="../Class_Airspace/class_airspace.cxx" />
+		<Unit filename="../Class_Airspace/class_airspace.hxx" />
+		<Unit filename="../OpenEaglePaths/OpenEaglePaths.cxx" />
+		<Unit filename="../OpenEaglePaths/OpenEaglePaths.hxx" />
+		<Unit filename="../U_S_Special_Use_Airspace/sua_airspace.cxx" />
+		<Unit filename="../U_S_Special_Use_Airspace/sua_airspace.hxx" />
+		<Unit filename="../airport/airport.cxx" />
+		<Unit filename="../airport/airport.hxx" />
+		<Unit filename="../avl_tree/avl_tree.cxx" />
+		<Unit filename="../avl_tree/avl_tree.hxx" />
+		<Unit filename="../data_conversion/data_conversion.cxx" />
+		<Unit filename="../data_conversion/data_conversion.hxx" />
+		<Unit filename="../read_data/read_data.cxx" />
+		<Unit filename="../read_data/read_data.hxx" />
+		<Unit filename="../shapefile/shapefile.cxx" />
+		<Unit filename="../shapefile/shapefile.hxx" />
+		<Unit filename="../system_io/system_io.cxx" />
+		<Unit filename="../system_io/system_io.hxx" />
+		<Unit filename="../tile/tile.cxx" />
+		<Unit filename="../tile/tile.hxx" />
+		<Unit filename="../time/time.cxx" />
+		<Unit filename="../time/time.hxx" />
+		<Unit filename="OpenEagleProcessShapefilesApp.cpp" />
+		<Unit filename="OpenEagleProcessShapefilesApp.h" />
+		<Unit filename="OpenEagleProcessShapefilesMain.cpp" />
+		<Unit filename="OpenEagleProcessShapefilesMain.h" />
+		<Unit filename="wxsmith/OpenEagleProcessShapefilesframe.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="OpenEagleProcessShapefilesApp.cpp" main="OpenEagleProcessShapefilesFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/OpenEagleProcessShapefilesframe.wxs" src="OpenEagleProcessShapefilesMain.cpp" hdr="OpenEagleProcessShapefilesMain.h" fwddecl="0" i18n="1" name="OpenEagleProcessShapefilesFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

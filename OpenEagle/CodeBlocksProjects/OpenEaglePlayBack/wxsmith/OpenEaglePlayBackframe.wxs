@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEaglePlayBackFrame">
+		<title>OpenEagle Playback</title>
+		<size>1200,300</size>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxPanel" name="ID_PANEL1" variable="PanelOpenEaglePlayBack" member="yes">
+			<pos>240,160</pos>
+			<object class="wxStaticText" name="ID_STATICTEXT_OPEN_EAGLE_PLAY_BACK" variable="StaticTextOpenEaglePlayBack" member="yes">
+				<label>OpenEagle PlayBack</label>
+				<pos>20,20</pos>
+				<size>330,50</size>
+				<font>
+					<size>24</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OPEN_EAGLE_EXT_FILE" variable="TextCtrlOpenEagleExtFile" member="yes">
+				<value>Text</value>
+				<pos>20,80</pos>
+				<size>1050,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnTextCtrl1Text" entry="EVT_TEXT" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SELECT" variable="ButtonSelect" member="yes">
+				<label>Select</label>
+				<pos>1080,80</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSelectClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_PATH" variable="StaticTextPath" member="yes">
+				<label>Path</label>
+				<pos>20,140</pos>
+				<size>60,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_PATH" variable="TextCtrlPath" member="yes">
+				<value>Text</value>
+				<pos>80,130</pos>
+				<size>1050,40</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_PLAY_BACK" variable="ButtonPlayBack" member="yes">
+				<label>Playback</label>
+				<pos>480,180</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonPlayBackClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxChoice" name="ID_CHOICE_SPEED" variable="ChoiceSpeed" member="yes">
+				<content>
+					<item>1/10x</item>
+					<item>1/2x</item>
+					<item>1x</item>
+				</content>
+				<selection>2</selection>
+				<pos>720,180</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_SPEED" variable="StaticTextSpeed" member="yes">
+				<label>Speed</label>
+				<pos>640,185</pos>
+				<size>60,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFlightHistory" member="yes">
+			<message>Select file</message>
+		</object>
+	</object>
+</wxsmith>

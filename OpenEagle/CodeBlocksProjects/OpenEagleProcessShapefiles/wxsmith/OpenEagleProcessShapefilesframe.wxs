@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagleProcessShapefilesFrame">
+		<title>OpenEagleProcessShapefiles</title>
+		<size>1200,900</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>80,30</pos>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_AIRPORT_FILENAME" variable="TextCtrlAirportFilename" member="yes">
+				<value>TEXT</value>
+				<pos>200,680</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_SPECIAL_USE_AIRSPACE_FILENAME" variable="TextCtrlSpecialUseAirspaceFilename" member="yes">
+				<value>Text</value>
+				<pos>200,540</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_APT_TXT" variable="TextCtrl_APT_TXT" member="yes">
+				<value>Text</value>
+				<pos>200,640</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_SPECIAL_USE_AIRSPACE_PATH" variable="TextCtrlSpecialUseAirspacePath" member="yes">
+				<value>Text</value>
+				<pos>200,500</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_BOUNDARY_AIRSPACE_PATH" variable="TextCtrlBoundaryAirspacePath" member="yes">
+				<value>Text</value>
+				<pos>200,360</pos>
+				<size>900,30</size>
+				<handler function="OnTextCtrlBoundaryAirspacePathText" entry="EVT_TEXT" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CLASS_AIRSPACE_PATH" variable="StaticTextClassAirspacePath" member="yes">
+				<label>Shape__Files path</label>
+				<pos>20,180</pos>
+				<size>120,20</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_CLASS_AIRSPACE" variable="ButtonLookupClassAirspace" member="yes">
+				<label>Lookup</label>
+				<pos>1105,170</pos>
+				<handler function="OnButtonLookupClassAirspaceClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_BOUNDARY_AIRSPACE_PATH" variable="StaticTextBoundaryAirspacePath" member="yes">
+				<label>Boundary Airspace Path</label>
+				<pos>20,360</pos>
+				<size>180,20</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_BOUNDARY_AIRSPACE_PATH" variable="ButtonLookupBoundaryAirspacePath" member="yes">
+				<label>lookup</label>
+				<pos>1105,360</pos>
+				<handler function="OnButtonLookupBoundaryAirspacePathClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_SPECIAL_USE_AIRSPACE_PATH" variable="StaticTextSpecialUseAirspacePath" member="yes">
+				<label>Special Use Airspace Path</label>
+				<pos>20,500</pos>
+				<size>180,20</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_SPECIAL_USE_AIRSPACE_PATH" variable="ButtonLookupSpecialUseAirspacePath" member="yes">
+				<label>Lookup</label>
+				<pos>1105,500</pos>
+				<handler function="OnButtonLookupSpecialUseAirspacePathClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_SPECIAL_USE_AIRSPACE_FILENAME" variable="StaticTextSpecialUseAirspaceFilename" member="yes">
+				<label>Program: OpenEagleSua</label>
+				<pos>20,550</pos>
+				<size>180,20</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_PATH_TO_MODELS_AND_OBJECTS" variable="StaticTextPathToModelsAndObjects" member="yes">
+				<label>Path to write &#x0A;MODELS and OBJECTS</label>
+				<pos>20,40</pos>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_MODELS_AND_OBJECTS_PATH" variable="ButtonLookupModelsAndObjectsPath" member="yes">
+				<label>Lookup</label>
+				<pos>1105,40</pos>
+				<handler function="OnButtonLookupModelsAndObjectsPathClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_PROCESS_CLASS_AIRSPACE" variable="ButtonProcessClassAirspace" member="yes">
+				<label>Process</label>
+				<pos>16,260</pos>
+				<handler function="OnButtonProcessClassAirspaceClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_PROCESS_BOUNDARY_AIRSPACE" variable="ButtonProcessBoundaryAirspace" member="yes">
+				<label>Process</label>
+				<pos>20,390</pos>
+				<handler function="OnButtonProcessBoundaryAirspaceClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_PROCESS_SPECIAL_USE_AIRSPACE" variable="ButtonProcessSpecialUseAirspace" member="yes">
+				<label>Process</label>
+				<pos>20,580</pos>
+				<handler function="OnButtonProcessSpecialUseAirspaceClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_AIRPORT_PATH" variable="StaticTextAirportPath" member="yes">
+				<label>Airport date: apt.txt</label>
+				<pos>20,640</pos>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_APT_PATH" variable="ButtonLookupAptPath" member="yes">
+				<label>Lookup</label>
+				<pos>1105,640</pos>
+				<handler function="OnButtonLookupAptPathClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_PROCESS_APT_SIGNS" variable="ButtonProcessAptSigns" member="yes">
+				<label>Process</label>
+				<pos>20,720</pos>
+				<handler function="OnButtonProcessAptSignsClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_AIRPORT_FILENAME" variable="StaticTextAirportFilename" member="yes">
+				<label>Program:&#x0A;OpenEagleAirportSigns</label>
+				<pos>20,680</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_NASR_APT_TXT" variable="TextCtrl_NASR_APT_txt" member="yes">
+				<value>Text</value>
+				<pos>200,210</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_PROGRAM_OPENEAGLE_CLASS_AIRSPACE" variable="StaticText_program_OpenEagle_class_airspace" member="yes">
+				<label>NASR:&#x0A;APT.txt </label>
+				<pos>20,210</pos>
+				<size>180,40</size>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_ClassAirspacePath" variable="TextCtrlClassAirspacePath" member="yes">
+				<value>Text</value>
+				<pos>200,170</pos>
+				<size>900,30</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_NASR_APT_TXT" variable="ButtonLookupNASR_APT_txt" member="yes">
+				<label>Lookup</label>
+				<pos>1105,210</pos>
+				<handler function="OnButtonLookupNASR_APT_txtClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+				<pos>20,300</pos>
+				<size>1150,5</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText2" member="yes">
+				<label>Download from: https://www.faa.gov/air__traffic/flight__info/aeronav/Aero__Data/NASR__Subscription/</label>
+				<pos>200,150</pos>
+				<size>680,20</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+				<label>Download: https://ais-faa.opendata.arcgis.com/datasets/67885972e4e940b2aa6d74024901c561__0?geometry=99.844%2C-88.438%2C-99.844%2C88.438</label>
+				<pos>20,310</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+				<label>Download: https://adds-faa.opendata.arcgis.com/datasets/67885972e4e940b2aa6d74024901c561__0?geometry=99.844%2C-88.438%2C-99.844%2C88.438</label>
+				<pos>20,330</pos>
+			</object>
+			<object class="wxStaticLine" name="ID_STATICLINE2" variable="StaticLine2" member="yes">
+				<pos>20,430</pos>
+				<size>1150,5</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+				<label>Download: https://ais-faa.opendata.arcgis.com/datasets/dd0d1b726e504137ab3c41b21835d05b__0?geometry=27.853%2C7.409%2C-22.069%2C78.288</label>
+				<pos>24,444</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+				<label>Download: https://adds-faa.opendata.arcgis.com/datasets/dd0d1b726e504137ab3c41b21835d05b__0?geometry=27.853%2C7.409%2C-22.069%2C78.288</label>
+				<pos>24,468</pos>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_SPECIAL_USE_FILENAME" variable="Button_lookup_special_use_filename" member="yes">
+				<label>Lookup</label>
+				<pos>1105,540</pos>
+				<handler function="OnButton_lookup_special_use_filenameClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticLine" name="ID_STATICLINE3" variable="StaticLine3" member="yes">
+				<pos>20,620</pos>
+				<size>1150,5</size>
+			</object>
+			<object class="wxStaticLine" name="ID_STATICLINE4" variable="StaticLine4" member="yes">
+				<pos>20,760</pos>
+				<size>1150,5</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_OPENEAGLEAIRPORTSIGNS" variable="Button_lookup_OpenEagleAirportSigns" member="yes">
+				<label>Lookup</label>
+				<pos>1105,680</pos>
+				<handler function="OnButton_lookup_OpenEagleAirportSignsClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticLine" name="ID_STATICLINE5" variable="StaticLine5" member="yes">
+				<pos>20,140</pos>
+				<size>1150,5</size>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+				<label>OpenEagleProcessShapefiles</label>
+				<pos>350,5</pos>
+				<size>350,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="TextCtrlModelsAndObjectsPath" variable="TextCtrl_models_and_objects_path" member="yes">
+				<value>Text</value>
+				<pos>200,40</pos>
+				<size>900,30</size>
+				<handler function="OnTextCtrl_models_and_objects_pathText" entry="EVT_TEXT" />
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxDirDialog" variable="DirDialogSelectDirectory" member="yes">
+			<message>Select directory</message>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFile" member="yes">
+			<message>Select file</message>
+		</object>
+	</object>
+</wxsmith>

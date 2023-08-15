@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <flight-rules type="string">V</flight-rules>
+  <flight-type type="string">X</flight-type>
+  <estimated-duration-minutes type="int">0</estimated-duration-minutes>
+  <departure>
+    <airport type="string">P52</airport>
+    <runway type="string">32</runway>
+  </departure>
+  <destination>
+    <airport type="string">OSH</airport>
+  </destination>
+  <route>
+    <wp>
+      <type type="string">runway</type>
+      <departure type="bool">true</departure>
+      <ident type="string">32</ident>
+      <icao type="string">P52</icao>
+    </wp>
+    <wp n="1">
+      <type type="string">navaid</type>
+      <ident type="string">24N</ident>
+      <lon type="double">-106.8841746</lon>
+      <lat type="double">36.82853417</lat>
+    </wp>
+    <wp n="2">
+      <type type="string">navaid</type>
+      <ident type="string">4V1</ident>
+      <lon type="double">-104.7857842</lon>
+      <lat type="double">37.69648456</lat>
+    </wp>
+    <wp n="3">
+      <type type="string">navaid</type>
+      <ident type="string">KITR</ident>
+      <lon type="double">-102.2853659</lon>
+      <lat type="double">39.24251104</lat>
+    </wp>
+    <wp n="4">
+      <type type="string">navaid</type>
+      <ident type="string">OIN</ident>
+      <lon type="double">-100.5376389</lon>
+      <lat type="double">39.82972222</lat>
+    </wp>
+    <wp n="5">
+      <type type="string">navaid</type>
+      <ident type="string">HSI</ident>
+      <lon type="double">-98.42961111</lon>
+      <lat type="double">40.60452778</lat>
+    </wp>
+    <wp n="6">
+      <type type="string">navaid</type>
+      <ident type="string">AHQ</ident>
+      <lon type="double">-96.59836111</lon>
+      <lat type="double">41.23916667</lat>
+    </wp>
+    <wp n="7">
+      <type type="string">navaid</type>
+      <ident type="string">VPENV</ident>
+      <lon type="double">-89.482222</lon>
+      <lat type="double">43.750833</lat>
+    </wp>
+    <wp n="8">
+      <type type="string">navaid</type>
+      <ident type="string">VPPLK</ident>
+      <lon type="double">-89.224722</lon>
+      <lat type="double">43.740278</lat>
+    </wp>
+    <wp n="9">
+      <type type="string">navaid</type>
+      <ident type="string">VPGRN</ident>
+      <lon type="double">-89.047222</lon>
+      <lat type="double">43.768889</lat>
+    </wp>
+    <wp n="10">
+      <type type="string">navaid</type>
+      <ident type="string">VPRIP</ident>
+      <lon type="double">-88.836389</lon>
+      <lat type="double">43.845833</lat>
+    </wp>
+    <wp n="11">
+      <type type="string">navaid</type>
+      <ident type="string">VPFIS</ident>
+      <lon type="double">-88.678611</lon>
+      <lat type="double">43.955</lat>
+    </wp>
+    <wp n="12">
+      <type type="string">navaid</type>
+      <approach type="bool">true</approach>
+      <ident type="string">OSH</ident>
+      <lon type="double">-88.556486</lon>
+      <lat type="double">43.98623187</lat>
+    </wp>
+    <wp n="13">
+      <type type="string">navaid</type>
+      <ident type="string">24N</ident>
+      <lon type="double">-106.8841746</lon>
+      <lat type="double">36.82853417</lat>
+    </wp>
+  </route>
+</PropertyList>

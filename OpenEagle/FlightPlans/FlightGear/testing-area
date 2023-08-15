@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <departure>
+    <airport type="string">KFLG</airport>
+    <runway type="string">03</runway>
+  </departure>
+  <destination>
+    <airport type="string">KFLG</airport>
+  </destination>
+  <route>
+    <wp>
+      <type type="string">runway</type>
+      <departure type="bool">true</departure>
+      <ident type="string">03</ident>
+      <icao type="string">KFLG</icao>
+    </wp>
+    <wp n="1">
+      <type type="string">navaid</type>
+      <ident type="string">KINW</ident>
+      <lon type="double">-110.7245533</lon>
+      <lat type="double">35.021593</lat>
+    </wp>
+    <wp n="2">
+      <type type="string">navaid</type>
+      <ident type="string">40G</ident>
+      <lon type="double">-112.1480915</lon>
+      <lat type="double">35.650565</lat>
+    </wp>
+    <wp n="3">
+      <type type="string">navaid</type>
+      <ident type="string">P23</ident>
+      <lon type="double">-112.887222</lon>
+      <lat type="double">35.335</lat>
+    </wp>
+    <wp n="4">
+      <type type="string">navaid</type>
+      <ident type="string">P52</ident>
+      <lon type="double">-112.0352805</lon>
+      <lat type="double">34.7300015</lat>
+    </wp>
+    <wp n="5">
+      <type type="string">navaid</type>
+      <ident type="string">KINW</ident>
+      <lon type="double">-110.7245533</lon>
+      <lat type="double">35.021593</lat>
+    </wp>
+    <wp n="6">
+      <type type="string">navaid</type>
+      <approach type="bool">true</approach>
+      <ident type="string">KFLG</ident>
+      <lon type="double">-111.6726372</lon>
+      <lat type="double">35.13852741</lat>
+    </wp>
+  </route>
+</PropertyList>

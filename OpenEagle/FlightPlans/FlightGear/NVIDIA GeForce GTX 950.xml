@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <shaders>
+    <custom-settings type="bool">true</custom-settings>
+    <clouds type="double">0</clouds>
+    <generic type="double">0</generic>
+    <landmass type="double">0</landmass>
+    <model type="double">0</model>
+    <contrails type="double">0</contrails>
+    <crop type="double">0</crop>
+    <skydome type="bool">false</skydome>
+    <transition type="double">0</transition>
+    <urban type="double">0</urban>
+    <water type="double">0</water>
+    <wind-effects type="double">0</wind-effects>
+    <vegetation-effects type="double">0</vegetation-effects>
+    <forest type="double">0</forest>
+    <lights type="double">1</lights>
+    <quality-level-internal type="double">1</quality-level-internal>
+    <quality-level type="double">-1</quality-level>
+  </shaders>
+  <random-objects type="bool">false</random-objects>
+  <random-vegetation type="bool">false</random-vegetation>
+  <random-vegetation-shadows type="bool">false</random-vegetation-shadows>
+  <random-vegetation-normals type="bool">false</random-vegetation-normals>
+  <vegetation-density type="double">1</vegetation-density>
+  <random-buildings type="bool">false</random-buildings>
+  <building-density type="double">1</building-density>
+  <point-sprites type="bool">true</point-sprites>
+  <particles type="bool">false</particles>
+  <clouds3d-enable type="bool">false</clouds3d-enable>
+  <clouds3d-vis-range type="double">150000</clouds3d-vis-range>
+  <clouds3d-detail-range type="double">10000</clouds3d-detail-range>
+  <clouds3d-density type="double">0</clouds3d-density>
+  <shadows>
+    <enabled type="bool">true</enabled>
+  </shadows>
+</PropertyList>

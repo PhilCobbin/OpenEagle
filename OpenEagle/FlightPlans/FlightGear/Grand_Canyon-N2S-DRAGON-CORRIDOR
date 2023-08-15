@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <flight-rules type="string">V</flight-rules>
+  <flight-type type="string">X</flight-type>
+  <estimated-duration-minutes type="int">0</estimated-duration-minutes>
+  <departure>
+    <airport type="string">P52</airport>
+  </departure>
+  <destination>
+    <airport type="string">P52</airport>
+  </destination>
+  <route>
+    <wp>
+      <type type="string">navaid</type>
+     <altitude-ft type="double">10500</altitude-ft>      
+      <ident type="string">VPGCG</ident>
+      <lon type="double">-112.11</lon>
+      <lat type="double">36.3185</lat>
+    </wp>
+    <wp n="1">
+      <type type="string">navaid</type>
+      <altitude-ft type="double">10500</altitude-ft>  
+      <ident type="string">VPGCF</ident>
+      <lon type="double">-112.2585</lon>
+      <lat type="double">36.016667</lat>
+    </wp>
+  </route>
+</PropertyList>

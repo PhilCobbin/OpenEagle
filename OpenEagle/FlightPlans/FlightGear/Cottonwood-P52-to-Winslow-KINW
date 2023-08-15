@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <flight-rules type="string">V</flight-rules>
+  <flight-type type="string">X</flight-type>
+  <estimated-duration-minutes type="int">0</estimated-duration-minutes>
+  <departure>
+    <airport type="string">P52</airport>
+    <runway type="string">32</runway>
+  </departure>
+  <destination>
+    <airport type="string">KINW</airport>
+  </destination>
+  <cruise>
+    <altitude-ft type="int">9500</altitude-ft>
+  </cruise>
+  <route>
+    <wp>
+      <type type="string">runway</type>
+      <departure type="bool">true</departure>
+      <ident type="string">32</ident>
+      <icao type="string">P52</icao>
+    </wp>
+    <wp n="1">
+      <type type="string">navaid</type>
+      <approach type="bool">true</approach>
+      <altitude-ft type="double">9500</altitude-ft>        
+      <ident type="string">KINW</ident>
+      <lon type="double">-110.7223888</lon>
+      <lat type="double">35.02197416</lat>
+    </wp>
+  </route>
+</PropertyList>

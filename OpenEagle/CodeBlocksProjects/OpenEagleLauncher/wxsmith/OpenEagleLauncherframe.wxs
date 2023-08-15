@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagleLauncherFrame">
+		<size>1200,900</size>
+		<bg>#A9A9A9</bg>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL_LAUNCH_PANEL" variable="PanelLaunchPanel" member="yes">
+			<pos>191,222</pos>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrlAirport" member="yes">
+				<value>KFLG</value>
+				<pos>100,60</pos>
+				<size>80,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="TextCtrlDisable" member="yes">
+				<value>--enable-fullscreen --disable-random-vegetation</value>
+				<pos>20,780</pos>
+				<size>800,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="TextCtrlHttpd" member="yes">
+				<value>8080</value>
+				<pos>140,430</pos>
+				<size>100,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OPEN_EAGLE_G5" variable="TextCtrlDataOpenEagleG5" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5556,tcp,OpenEagleG5</value>
+				<pos>300,215</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnTextCtrlData1Text1" entry="EVT_TEXT" />
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_OPENEAGLE_G5" variable="CheckBoxDataOpenEagleG5" member="yes">
+				<label>DATA OpenEagleG5</label>
+				<pos>20,220</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBoxData1Click" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="TextCtrlAircraft" member="yes">
+				<value>OpenEagle</value>
+				<pos>280,60</pos>
+				<size>140,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FLIGHT_PLAN" variable="TextCtrlFlightPlan" member="yes">
+				<value>--flight-plan=/home/phil/.fgfs/Export/testing-area</value>
+				<pos>140,15</pos>
+				<size>700,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FLIGHT_PLAN" variable="StaticTextFlightPlan" member="yes">
+				<label>Flight Plan</label>
+				<pos>20,20</pos>
+				<size>120,24</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_START_AIRPORT" variable="ButtonStartAirport" member="yes">
+				<label>Start Airport</label>
+				<pos>10,43d</pos>
+				<size>160,35</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxBORDER_DOUBLE</style>
+				<handler function="OnButtonStartAirportClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON2" variable="ButtonQuit" member="yes">
+				<label>Quit</label>
+				<pos>1050,800</pos>
+				<size>120,60</size>
+				<font>
+					<size>36</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxBORDER_DOUBLE</style>
+				<handler function="OnQuit" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_METAR" variable="TextCtrlMetar" member="yes">
+				<value>&apos;XXXX 012345Z 00000KT 99SM NOSIG&apos; </value>
+				<pos>160,520</pos>
+				<size>420,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL12" variable="TextCtrlDisable2" member="yes">
+				<value>--disable-random-buildings --disable-ai-models --disable-ai-traffic --disable-terrasync</value>
+				<pos>24,840</pos>
+				<size>1000,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX3" variable="CheckBoxFgroot" member="yes">
+				<label>--fg-root=path</label>
+				<checked>1</checked>
+				<pos>20,475</pos>
+				<size>190,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL13" variable="TextCtrlFgroot" member="yes">
+				<value>/home/phil/Desktop/FlightGearOpenEagle</value>
+				<pos>208,470</pos>
+				<size>950,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL16" variable="TextCtrlLon" member="yes">
+				<value>-110.384749</value>
+				<pos>700,60</pos>
+				<size>200,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_START_COORDINATES_ELEVATION" variable="ButtonStartCoordinatesElevation" member="yes">
+				<label>Start  Lat/Lon/Altitude</label>
+				<pos>430,103</pos>
+				<size>650,35</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonStartCoordinatesElevationClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL17" variable="TextCtrlLat" member="yes">
+				<value>36.58686</value>
+				<pos>480,64</pos>
+				<size>160,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX6" variable="CheckBoxDisableHud3D" member="yes">
+				<label>--disable-hud-3d</label>
+				<checked>1</checked>
+				<pos>32,632</pos>
+				<size>220,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX10" variable="CheckBoxDisableSound" member="yes">
+				<label>--disable-sound</label>
+				<checked>1</checked>
+				<pos>32,560</pos>
+				<size>200,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX16" variable="CheckBoxDisableFullscreen" member="yes">
+				<label>--disable-fullscreen</label>
+				<checked>1</checked>
+				<pos>32,592</pos>
+				<size>250,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX17" variable="CheckBoxEnableFullscreen" member="yes">
+				<label>--enable-fullscreen</label>
+				<pos>32,616</pos>
+				<size>250,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX18" variable="CheckBoxGeometry" member="yes">
+				<label>--geometry=WxH</label>
+				<pos>608,696</pos>
+				<size>220,-1</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX19" variable="CheckBoxTimeOfDay" member="yes">
+				<label>--timeofday=</label>
+				<checked>1</checked>
+				<pos>20,740</pos>
+				<size>170,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX20" variable="CheckBoxSeason" member="yes">
+				<label>--season=</label>
+				<checked>1</checked>
+				<pos>370,745</pos>
+				<size>140,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrlGeometry" member="yes">
+				<value>640x480</value>
+				<pos>808,696</pos>
+				<size>200,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX23" variable="CheckBoxMetar" member="yes">
+				<label>--metar=</label>
+				<checked>1</checked>
+				<pos>20,525</pos>
+				<size>130,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX24" variable="CheckBoxDisableRealWeatherFetch" member="yes">
+				<label>--disable-real-weather-fetch</label>
+				<pos>24,672</pos>
+				<size>350,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX27" variable="CheckBoxVisibilityMiles" member="yes">
+				<label>--visibility-miles=</label>
+				<checked>1</checked>
+				<pos>336,704</pos>
+				<size>220,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL10" variable="TextCtrlVisibilityMiles" member="yes">
+				<value>75</value>
+				<pos>536,696</pos>
+				<size>50,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxChoice" name="ID_CHOICE1" variable="ChoiceSeason" member="yes">
+				<content>
+					<item>summer</item>
+					<item>winter</item>
+				</content>
+				<selection>0</selection>
+				<pos>510,735</pos>
+				<size>150,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxChoice" name="ID_CHOICE2" variable="ChoiceTimeOfDay" member="yes">
+				<content>
+					<item>real</item>
+					<item>dawn</item>
+					<item>morning</item>
+					<item>noon</item>
+					<item>afternoon</item>
+					<item>dusk</item>
+					<item>evening</item>
+					<item>midnight</item>
+				</content>
+				<selection>2</selection>
+				<pos>200,735</pos>
+				<size>150,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX31" variable="CheckBoxHttp" member="yes">
+				<label>--httpd=</label>
+				<checked>1</checked>
+				<pos>20,430</pos>
+				<size>120,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX12" variable="CheckBoxCeiling" member="yes">
+				<label>--ceiling=</label>
+				<checked>1</checked>
+				<pos>20,700</pos>
+				<size>130,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRLCeiling" variable="TextCtrlCeiling" member="yes">
+				<value>100000:0</value>
+				<pos>160,695</pos>
+				<size>150,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="TextCtrlAltitude" member="yes">
+				<value>8000</value>
+				<pos>960,60</pos>
+				<size>120,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_FDM_NULL" variable="CheckBoxFdmNull" member="yes">
+				<label>--fdm=null</label>
+				<checked>1</checked>
+				<pos>270,430</pos>
+				<size>160,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBoxFdmNullClick" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX2" variable="CheckBoxData2" member="yes">
+				<label>DATA2</label>
+				<pos>20,360</pos>
+				<size>100,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBoxData2Click" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="TextCtrlData2" member="yes">
+				<value>--native=file,in,10,flight1.fgfs</value>
+				<pos>120,360</pos>
+				<size>860,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LOOKUP_FLIGHT" variable="Button_Lookup_Flight" member="yes">
+				<label>Lookup Flight</label>
+				<pos>1000,360</pos>
+				<size>180,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButton_Lookup_FlightClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SELECT_FLIGHT_PLAN" variable="ButtonSelectFlightPlan" member="yes">
+				<label>Select Flight Plan</label>
+				<pos>850,15</pos>
+				<size>230,35</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSelectFlightPlanClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DISABLE_AI_TRAFFIC" variable="CheckBoxDisableAITraffic" member="yes">
+				<label>--disable-ai-traffic</label>
+				<checked>1</checked>
+				<pos>460,430</pos>
+				<size>220,20</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_AIRPORT" variable="StaticTextAirport" member="yes">
+				<label>Airport</label>
+				<pos>20,60</pos>
+				<size>80,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_AIRCRAFT" variable="StaticTextAircraft" member="yes">
+				<label>Aircraft</label>
+				<pos>190,60</pos>
+				<size>80,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_LON" variable="Lon" member="yes">
+				<label>Lon</label>
+				<pos>650,60</pos>
+				<size>60,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_ALT" variable="StaticTextAlt" member="yes">
+				<label>Alt</label>
+				<pos>920,60</pos>
+				<size>30,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_LAT" variable="StaticTextLat" member="yes">
+				<label>Lat</label>
+				<pos>430,60</pos>
+				<size>40,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_WRITE_OPEN_EAGLE_EXT" variable="CheckBoxWriteOpenEagleExt" member="yes">
+				<label>Write OpenEagleExt File</label>
+				<checked>1</checked>
+				<pos>20,390</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBoxWriteOpenEagleExtClick1" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOXWRITE_FGFS_FILE" variable="CheckBoxWriteFGFSfile" member="yes">
+				<label>Write fgfs file</label>
+				<pos>300,390</pos>
+				<size>180,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBoxWriteFGFSfileClick3" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DATA_OPEN_EAGLE_GPS_W_ALT" variable="CheckBoxDataOpenEagleGPSwAlt" member="yes">
+				<label>DATA OpenEagleGPSwAlt</label>
+				<pos>20,185</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX5" variable="CheckBox2" member="yes">
+				<label>Write GPSwAlt</label>
+				<pos>480,390</pos>
+				<size>180,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX7" variable="CheckBox3" member="yes">
+				<label>Write GPS</label>
+				<pos>660,390</pos>
+				<size>140,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX8" variable="CheckBox4" member="yes">
+				<label>Write G5</label>
+				<pos>800,390</pos>
+				<size>120,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX9" variable="CheckBox5" member="yes">
+				<label>Write EM</label>
+				<pos>920,390</pos>
+				<size>120,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX11" variable="CheckBox6" member="yes">
+				<label>Write FC</label>
+				<pos>1050,390</pos>
+				<size>120,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DATA_OPEN_EAGLE_GPS" variable="CheckBoxDataOpenEagleGPS" member="yes">
+				<label>DATA OpenEagleGPS</label>
+				<pos>20,150</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DATA_OPEN_EAGLE_MANUAL" variable="CheckBoxDataOpenEagleManual" member="yes">
+				<label>DATA OpenEagleManual</label>
+				<pos>20,255</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OpenEagleGPS_W_ALT" variable="TextCtrlDataOpenEagleGPSwAlt" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5555,tcp,OpenEagleGPSwALT</value>
+				<pos>300,180</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DATA_OPEN_EAGLE_EM" variable="CheckBoxDataOpenEagleEM" member="yes">
+				<label>DATA OpenEagleEM</label>
+				<pos>20,290</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_DATA_OPEN_EAGLE_FC" variable="CheckBoxDataOpenEagleFC" member="yes">
+				<label>DATA OpenEagleFC</label>
+				<pos>20,325</pos>
+				<size>280,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnCheckBox10Click" entry="EVT_CHECKBOX" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_DATA_OPEN_EAGLE_GPS" variable="TextCtrlDataOpenEagleGPS" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5555,tcp,OpenEagleGPS</value>
+				<pos>300,145</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnTextCtrlOpenEagleGPSText" entry="EVT_TEXT" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTROpenEagleManual" variable="TextCtrlDataOpenEagleManual" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5559,tcp,OpenEagleManual</value>
+				<pos>300,250</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OPEN_EAGLE_EM" variable="TextCtrlDataOpenEagleEM" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5557,tcp,OpenEagleEM</value>
+				<pos>300,285</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OPEN_EAGLE_FC" variable="TextCtrlDataOpenEagleFC" member="yes">
+				<value>--generic=socket,in,10,127.0.0.1,5558,tcp,OpenEagleFC</value>
+				<pos>300,320</pos>
+				<size>800,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFlightHistory" member="yes">
+			<message>Select file</message>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFlightPlan" member="yes">
+			<message>Select file</message>
+			<style>0</style>
+		</object>
+	</object>
+</wxsmith>

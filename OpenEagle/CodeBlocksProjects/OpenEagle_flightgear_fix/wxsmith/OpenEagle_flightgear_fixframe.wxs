@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagle_flightgear_fixFrame">
+		<title>OpenEagle__flightgear__fix</title>
+		<size>950,350</size>
+		<object class="wxPanel" name="ID_PANEL_OPENEAGLE_FLIGHTGEAR_FIX" variable="Panel_OpenEagle_flightgear_fix" member="yes">
+			<pos>0,0</pos>
+			<object class="wxStaticText" name="ID_STATICTEXT_OPENEAGLE_FLIGHTGEAR_FIX" variable="StaticText_OpenEagle_flightgear_fix" member="yes">
+				<label>            OpenEagle__flightgear__fix&#x0A;(generate replacement using NASR data)</label>
+				<pos>300,20</pos>
+				<size>500,70</size>
+				<font>
+					<size>18</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_NASR_FIX_TXT" variable="TextCtrl_NASR_fix_txt" member="yes">
+				<value>Text</value>
+				<pos>140,100</pos>
+				<size>700,40</size>
+				<font>
+					<size>10</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SELECT_NASR_FIX_TXT" variable="Button_NASR_fix_txt" member="yes">
+				<label>Select</label>
+				<pos>850,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButton_NASR_fix_txtClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_NASR_FIX_TXT" variable="StaticText_NASR_fix_txt" member="yes">
+				<label>NASR&#x0A;fix.txt</label>
+				<pos>10,95</pos>
+				<size>60,50</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FLIGHTGEAR_FIX_PATH" variable="StaticText_flightgear_fix_path" member="yes">
+				<label>flightgear&#x0A;fix path</label>
+				<pos>10,170</pos>
+				<size>100,50</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FLIGHTGEAR_FIX_PATH" variable="TextCtrl_flightgear_fix_path" member="yes">
+				<value>Text</value>
+				<pos>140,180</pos>
+				<size>700,40</size>
+				<font>
+					<size>10</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SELECT_FLIGHTGEAR_FIX_PATH" variable="Button_Select_flightgear_fix_path" member="yes">
+				<label>Select</label>
+				<pos>850,180</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButton_Select_flightgear_fix_pathClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_GENERATE_FLIGHTGEAR_FIX_FILE" variable="Button_Generate_flightgear_fix_file" member="yes">
+				<label>Generate flightgear fix file (existing will be renamed with retirement date prefix)</label>
+				<pos>140,240</pos>
+				<size>760,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButton_Generate_flightgear_fix_fileClick" entry="EVT_BUTTON" />
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar_OpenEagle_flightgear_fix" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR_OPEN_EAGLE_FLIGHTGEAR_STATUS_BAR" variable="StatusBar_OpenEagle_flightgear_fix" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxFileDialog" variable="FileDialog_File_Select" member="yes">
+			<message>Select file</message>
+		</object>
+		<object class="wxDirDialog" variable="DirDialog_Select_Path" member="yes">
+			<message>Select path</message>
+		</object>
+	</object>
+</wxsmith>

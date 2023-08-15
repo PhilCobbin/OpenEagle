@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagleDataMgrFrame">
+		<title>Open Eagle CRM114 Data Manager</title>
+		<size>1200,600</size>
+		<id_arg>0</id_arg>
+		<object class="wxPanel" name="ID_PANEL_DATA_MGR" variable="PanelDataMgr" member="yes">
+			<pos>0,0</pos>
+			<size>1200,800</size>
+			<object class="wxStaticText" name="ID_STATICTEXT_OPEN_EAGLE_CRM114" variable="StaticText_OpenEagleCRM114" member="yes">
+				<label>OpenEagle Data Manager</label>
+				<pos>20,15</pos>
+				<size>500,50</size>
+				<font>
+					<size>24</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_CREW" variable="TextCtrlCrew" member="yes">
+				<value>180</value>
+				<pos>120,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_BAGGAGE" variable="TextCtrlBaggage" member="yes">
+				<value>0</value>
+				<pos>230,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_RPM" variable="TextCtrlRPM" member="yes">
+				<value>0</value>
+				<pos>340,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_MP" variable="TextCtrlMP" member="yes">
+				<value>0</value>
+				<pos>450,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FLAPS" variable="TextCtrlFlaps" member="yes">
+				<value>0</value>
+				<pos>670,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OAT" variable="TextCtrlOAT" member="yes">
+				<value>68</value>
+				<pos>780,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_STALL_7" variable="ButtonStall7" member="yes">
+				<label>Stall (7)</label>
+				<pos>810,330</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonStall7Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_TURN_8" variable="ButtonTurn8" member="yes">
+				<label>Turn (8)</label>
+				<pos>810,380</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonTurn8Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_OPE9" variable="ButtonOPE9" member="yes">
+				<label>OPE (9)</label>
+				<pos>810,430</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonOPE9Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_DIVE_4" variable="ButtonDive4" member="yes">
+				<label>Dive (4)</label>
+				<pos>660,330</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonDive4Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_LAND_5" variable="ButtonLand5" member="yes">
+				<label>Land (5)</label>
+				<pos>660,380</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonLand5Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SPEED_6" variable="ButtonSpeed6" member="yes">
+				<label>Speed (6)</label>
+				<pos>660,430</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSpeed6Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_TAKEOFF_1" variable="ButtonTakeoff1" member="yes">
+				<label>Takeoff (1)</label>
+				<pos>510,330</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonTakeoff1Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_CLIMB_2" variable="ButtonClimb2" member="yes">
+				<label>Climb (2)</label>
+				<pos>510,380</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonClimb2Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_CRUISE_3" variable="ButtonCruise3" member="yes">
+				<label>Cruise (3)</label>
+				<pos>510,430</pos>
+				<size>130,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonCruise3Click" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_OAT" variable="StaticTextOAT" member="yes">
+				<label>OAT</label>
+				<pos>795,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>55,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_STANDBY" variable="StaticTextStandby" member="yes">
+				<label>Standby</label>
+				<pos>385,290</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>90,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CURRENT" variable="StaticTextCurrent" member="yes">
+				<label>Current</label>
+				<pos>235,290</pos>
+				<size>80,20</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_STANDBY_FIRST_CODE_PREFIX" variable="TextCtrlStandbyFirstCodePrefix" member="yes">
+				<value>0</value>
+				<pos>370,330</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_CURRENT_FIRST_CODE_PREFIX" variable="TextCtrlCurrentFirstCodePrefix" member="yes">
+				<value>0</value>
+				<pos>220,330</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_STANDBY_SECOND_CODE_PREFIX" variable="TextCtrlStandbySecondCodePrefix" member="yes">
+				<value>0</value>
+				<pos>370,380</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_STANDBY_THIRD_CODE_PREFIX" variable="TextCtrlStandbyThirdCodePrefix" member="yes">
+				<value>0</value>
+				<pos>370,430</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_CURRENT_SECOND_CODE_PREFIX" variable="TextCtrlCurrentSecondCodePrefix" member="yes">
+				<value>0</value>
+				<pos>220,380</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_CURRENT_THIRD_CODE_PREFIX" variable="TextCtrlCurrentThirdCodePrefix" member="yes">
+				<value>0</value>
+				<pos>220,430</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<style>wxTE_READONLY</style>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FIRST_CODE_PREFIX" variable="StaticTextFirstCodePrefix" member="yes">
+				<label>First Code Prefix</label>
+				<pos>20,335</pos>
+				<size>180,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_SECOND_CODE_PREFIX" variable="StaticTextSecondCodePrefix" member="yes">
+				<label>Second Code Prefix</label>
+				<pos>20,385</pos>
+				<size>220,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_THIRD_CODE_PREFIX" variable="StaticTextThirdCodePrefix" member="yes">
+				<label>Third Code Prefix</label>
+				<pos>20,435</pos>
+				<size>190,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SET" variable="ButtonSet" member="yes">
+				<label>Set</label>
+				<pos>220,480</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSetClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_RESET" variable="ButtonReset" member="yes">
+				<label>Reset</label>
+				<pos>370,480</pos>
+				<size>120,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonResetClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CRM114" variable="StaticTextCRM114" member="yes">
+				<label>CRM114</label>
+				<pos>20,270</pos>
+				<size>150,60</size>
+				<font>
+					<size>24</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CREW" variable="StaticTextCrew" member="yes">
+				<label>Crew</label>
+				<pos>135,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>60,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_BAGGAGE" variable="StaticTextBaggage" member="yes">
+				<label>Baggage</label>
+				<pos>235,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>95,30</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_RPM" variable="StaticTextRPM" member="yes">
+				<label>RPM</label>
+				<pos>365,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>50,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_MP" variable="StaticTextMP" member="yes">
+				<label>MP</label>
+				<pos>480,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>45,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FLAPS" variable="StaticTextFlaps" member="yes">
+				<label>Flaps</label>
+				<pos>690,100</pos>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<minsize>65,25</minsize>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CRM114CodeBook" variable="StaticTextCRM114CodeBook" member="yes">
+				<label>&lt;---------------- CRM114 Code Book -----------------&gt;</label>
+				<pos>510,290</pos>
+				<size>430,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CURRENT_MANUAL" variable="StaticTextCurrentManual" member="yes">
+				<label>Current</label>
+				<pos>1000,140</pos>
+				<size>80,20</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SET_MANUAL" variable="ButtonSetManual" member="yes">
+				<label>Set</label>
+				<pos>1090,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSetManualClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_CREW_STANDBY" variable="TextCtrlCrewStandby" member="yes">
+				<value>180</value>
+				<pos>120,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_BAGGAGE_STANDBY" variable="TextCtrlBaggageStandby" member="yes">
+				<value>0</value>
+				<pos>230,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_RPM_STANDBY" variable="TextCtrlRPMStandby" member="yes">
+				<value>0</value>
+				<pos>340,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_MP_STANDBY" variable="TextCtrlMPStandby" member="yes">
+				<value>0</value>
+				<pos>450,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FLAPS_STANDBY" variable="TextCtrlFlapsStandby" member="yes">
+				<value>0</value>
+				<pos>670,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OAT_STANDBY" variable="TextCtrlOATStandby" member="yes">
+				<value>68</value>
+				<pos>780,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText2" member="yes">
+				<label>Standby</label>
+				<pos>1000,185</pos>
+				<size>95,30</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText3" member="yes">
+				<label>&lt;------------------------------------------------------------------------ Manual Data Entry ------------------------------------------------------------------------&gt;</label>
+				<pos>10,70</pos>
+				<size>1070,20</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+				<label>&lt;------------------------------------------------------------------- Flight Testing -------------------------------------------------------------------&gt;</label>
+				<pos>16,240</pos>
+				<size>1168,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+				<label>First&#x0A;1        &#x0A;2  &#x0A;3 &#x0A;4   &#x0A;5       &#x0A;6     &#x0A;7    &#x0A;8     &#x0A;9&#x0A;10 ...     </label>
+				<pos>950,290</pos>
+				<size>50,260</size>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+				<label>Second&#x0A;Density Alt&#x0A;Airspeed&#x0A;Airspeed&#x0A;Airspeed&#x0A;Airspeed&#x0A;Airspeed&#x0A;Density Alt&#x0A;Airspeed&#x0A;manual</label>
+				<pos>995,290</pos>
+				<size>95,260</size>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+				<label>Third&#x0A;Flaps&#x0A;Flaps&#x0A;Density Alt&#x0A;Flaps&#x0A;Flaps&#x0A;Density Alt&#x0A;&#x0A;Density Alt&#x0A;manual</label>
+				<pos>1090,290</pos>
+				<size>95,260</size>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+				<label>&lt;----- Code Prefixes -----&gt;</label>
+				<pos>952,264</pos>
+				<size>240,25</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT12" variable="StaticText12" member="yes">
+				<label>Cowl Flap</label>
+				<pos>565,104</pos>
+				<size>100,22</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_COWL_FLAP" variable="TextCtrlCowlFlap" member="yes">
+				<value>0</value>
+				<pos>560,130</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_COWL_FLAP_STANDBY" variable="TextCtrlCowlFlapStandby" member="yes">
+				<value>0</value>
+				<pos>560,180</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFlightHistory" member="yes">
+			<message>Select file</message>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,27 @@
+fgfs \
+--airport=KFLG \
+--aircraft=OpenEagle \
+--disable-random-objects \
+--disable-random-vegetation \
+--disable-random-buildings \
+--fog-disable \
+--disable-distance-attenuation \
+--disable-horizon-effect \
+--disable-specular-highlight \
+--disable-clouds \
+--disable-clouds3d \
+--disable-terrasync \
+--httpd=8080 \
+--fg-root=/home/phil/Desktop/OpenEagle/OpenEagle-flightgear \
+--disable-hud-3d \
+--disable-ai-traffic \
+--disable-sound \
+--ceiling=100000:0 \
+--disable-fullscreen \
+--timeofday=morning \
+--season=summer \
+--metar='XXXX 012345Z 00000KT 99SM NOSIG'  \
+--visibility-miles=75 \
+--flight-plan=/home/phil/.fgfs/Export/Flagstaff-KFLG-to-GC-ZUNI-DRAGON-Flagstaff-KFLG \
+
+

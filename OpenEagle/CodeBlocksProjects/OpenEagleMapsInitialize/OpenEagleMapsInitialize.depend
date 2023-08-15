@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1692045023 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/avl_tree/avl_tree.cxx
+	<string.h>
+	"avl_tree.hxx"
+	<stdio.h>
+	<stdlib.h>
+
+1692044999 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/avl_tree/avl_tree.hxx
+
+1691791567 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/maps/maps.cxx
+	"../maps/maps.hxx"
+	"../OpenEaglePaths/OpenEaglePaths.hxx"
+	"../system_io/system_io.hxx"
+	<iostream>
+	<sys/stat.h>
+
+1692049399 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/maps/maps.hxx
+	<string>
+	"../avl_tree/avl_tree.hxx"
+	"../OpenEaglePaths/OpenEaglePaths.hxx"
+
+1692050427 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/OpenEaglePaths/OpenEaglePaths.hxx
+	<string>
+
+1692050647 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.hxx
+	<string.h>
+	<string>
+
+1692050427 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/OpenEaglePaths/OpenEaglePaths.cxx
+	"OpenEaglePaths.hxx"
+	"../read_data/read_data.hxx"
+	"../system_io/system_io.hxx"
+
+1692050524 /home/phil/Desktop/OpenEagle/CodeBlocksProjects/read_data/read_data.hxx
+	<stdio.h>
+
+1692050524 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/read_data/read_data.cxx
+	"read_data.hxx"
+
+1692050647 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/system_io/system_io.cxx
+	"../system_io/system_io.hxx"
+	<errno.h>
+
+1691708913 source:/home/phil/Desktop/OpenEagle/CodeBlocksProjects/OpenEagleMapsInitialize/main.cpp
+	<iostream>
+	"../maps/maps.hxx"
+

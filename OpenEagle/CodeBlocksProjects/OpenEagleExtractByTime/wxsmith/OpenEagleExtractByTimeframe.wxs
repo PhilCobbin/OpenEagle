@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="OpenEagleExtractByTimeFrame">
+		<size>1200,300</size>
+		<object class="wxPanel" name="ID_PANEL_EXTRACT_BY_TIME" variable="PanelExtractByTime" member="yes">
+			<pos>1,0</pos>
+			<object class="wxStaticText" name="ID_STATICTEXT_OPEN_EAGLE_EXTRACT_BY_TIME" variable="StaticTextOpenEagleExtractByTime" member="yes">
+				<label>OpenEagle Extract by Time</label>
+				<pos>40,32</pos>
+				<size>470,50</size>
+				<font>
+					<size>24</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_OPEN_EAGLE_EXT_FILE" variable="TextCtrlOpenEagleExtFile" member="yes">
+				<value>Text</value>
+				<pos>20,80</pos>
+				<size>1050,40</size>
+				<handler function="OnTextCtrl1Text" entry="EVT_TEXT" />
+			</object>
+			<object class="wxButton" name="ID_BUTTON_SELECT" variable="ButtonSelect" member="yes">
+				<label>Select</label>
+				<pos>1080,80</pos>
+				<size>100,40</size>
+				<font>
+					<size>14</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonSelectClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_Path" variable="StaticTextPath" member="yes">
+				<label>Path</label>
+				<pos>20,140</pos>
+				<size>60,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_PATH" variable="TextCtrlPath" member="yes">
+				<value>Text</value>
+				<pos>80,130</pos>
+				<size>1100,40</size>
+			</object>
+			<object class="wxButton" name="ID_BUTTON_EXTRACT" variable="ButtonExtract" member="yes">
+				<label>Extract</label>
+				<pos>20,200</pos>
+				<size>120,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+				<handler function="OnButtonExtractClick" entry="EVT_BUTTON" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FROM" variable="StaticTextFrom" member="yes">
+				<label>From</label>
+				<pos>200,205</pos>
+				<size>60,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FROM_HOUR" variable="TextCtrlFromHour" member="yes">
+				<value>Text</value>
+				<pos>260,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FROM_HOUR" variable="StaticTextFromHour" member="yes">
+				<label>Hour</label>
+				<pos>280,175</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FROM_MINUTE" variable="TextCtrlFromMinute" member="yes">
+				<value>Text</value>
+				<pos>360,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FROM_MINUTE" variable="StaticTextFromMinute" member="yes">
+				<label>Minute</label>
+				<pos>370,175</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_FROM_SECOND" variable="TextCtrlFromSecond" member="yes">
+				<value>Text</value>
+				<pos>460,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_FROM_SECOND" variable="StaticTextFromSecond" member="yes">
+				<label>Second</label>
+				<pos>470,175</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_TO" variable="StaticTextTo" member="yes">
+				<label>To</label>
+				<pos>560,205</pos>
+				<size>30,30</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_TO_HOUR" variable="TextCtrlToHour" member="yes">
+				<value>Text</value>
+				<pos>600,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_TO_MINUTE" variable="TextCtrlToMinute" member="yes">
+				<value>Text</value>
+				<pos>700,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_TO_SECOND" variable="TextCtrlToSecond" member="yes">
+				<value>Text</value>
+				<pos>800,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_TO_HOUR" variable="StaticTextToHour" member="yes">
+				<label>Hour</label>
+				<pos>620,175</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_TO_MINUTE" variable="StaticTextToMinute" member="yes">
+				<label>Minute</label>
+				<pos>710,175</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_TO_SECOND" variable="StaticTextToSecond" member="yes">
+				<label>Second</label>
+				<pos>810,175</pos>
+			</object>
+			<object class="wxCheckBox" name="ID_CHECKBOX_SET_PREFIX_1" variable="CheckBoxSetPrefix1" member="yes">
+				<label>Set Prefix 1</label>
+				<pos>890,205</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT_CRM114_PREFIX" variable="StaticTextCRM114Prefix" member="yes">
+				<label>CRM114 Prefix 1</label>
+				<pos>1000,176</pos>
+			</object>
+			<object class="wxTextCtrl" name="ID_TEXTCTRL_PREFIX_1" variable="TextCtrlPrefix1" member="yes">
+				<value>Text</value>
+				<pos>1000,200</pos>
+				<size>75,40</size>
+				<font>
+					<size>16</size>
+					<style>normal</style>
+					<weight>bold</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+					<face>Sans</face>
+				</font>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxFileDialog" variable="FileDialogSelectFlightHistory" member="yes">
+			<message>Select file</message>
+		</object>
+	</object>
+</wxsmith>

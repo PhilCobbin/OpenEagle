@@ -1,0 +1,1247 @@
+AC3Db
+MATERIAL "illum" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
+OBJECT world
+name "Blender_exporter_v3.3__untitled.ac"
+kids 40
+# Heading Numbers
+OBJECT poly
+name "heading-true_0"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_0.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_10"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_10.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_20"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_20.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_30"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_30.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_40"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_40.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_50"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_50.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_60"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_60.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_70"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_70.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_80"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_80.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_90"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_90.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_100"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_100.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_110"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_110.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_120"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_120.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_130"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_130.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_140"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_140.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_150"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_150.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_160"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_160.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_170"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_170.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_180"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_180.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_190"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_190.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_200"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_200.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_210"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_210.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_220"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_220.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_230"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_230.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_240"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_240.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_250"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_250.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_260"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_260.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_270"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_270.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_280"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_280.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_290"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_290.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_300"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_300.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_310"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_310.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_320"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_320.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_330"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_330.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_340"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_340.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "heading-true_350"
+data 15
+a.mesh
+crease 45.0
+texture "numbers/heading-true/heading-true_350.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "reticle"
+data 15
+a.mesh
+crease 45.0
+texture "reticle/heading-true/reticle.png"
+texrep 1 1
+numvert 6
+0.00001   0.025233  -0.378500
+0.00001  -0.025233  -0.378500
+0.00001  -0.025233   0.3785001
+0.00001   0.025233   0.378500
+0.00001 -0   0.378500
+0.00001 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+
+OBJECT poly
+name "reticle-brg"
+data 15
+a.mesh
+crease 45.0
+texture "reticle/heading-true/reticle-brg.png"
+texrep 1 1
+numvert 6
+0.00001   0.025233  -0.378500
+0.00001  -0.025233  -0.378500
+0.00001  -0.025233   0.3785001
+0.00001   0.025233   0.378500
+0.00001 -0   0.378500
+0.00001 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "bug"
+data 15
+a.mesh
+crease 45.0
+texture "bug/heading-true/bug.png"
+texrep 1 1
+numvert 6
+0.00001   0.025233  -0.378500
+0.00001  -0.025233  -0.378500
+0.00001  -0.025233   0.3785001
+0.00001   0.025233   0.378500
+0.00001 -0   0.378500
+0.00001 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "scale"
+data 15
+a.mesh
+crease 45.0
+texture "scale/heading-true/scale.png"
+texrep 1 1
+numvert 6
+0   0.025233  -0.378500
+0  -0.025233  -0.378500
+0  -0.025233   0.3785001
+0   0.025233   0.378500
+0 -0   0.378500
+0 0  -0.378500
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+

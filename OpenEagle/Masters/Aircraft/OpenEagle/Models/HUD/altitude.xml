@@ -1,0 +1,946 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>altitude.ac</path>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>scale</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>0</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>bug</object-name>
+    <condition>
+      <equals>
+        <property>/OpenEagle/autopilot/move_reticle_alt</property>
+        <value type="double">1.0</value>
+      </equals>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>bug</object-name>
+    <property>/OpenEagle/autopilot/move_reticle_alt_ft</property>
+    <bias>
+    0.0
+    </bias>
+    <factor> 0.000333334</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_0</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">-1400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">1400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_0</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>  0.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">-900.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">1900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_1000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">-400.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">2400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_1000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-1000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_1500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">2900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_1500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-1500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_2000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">3400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_2000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-2000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_2500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">1100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">3900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_2500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-2500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_3000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">1600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">4400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_3000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-3000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_3500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">2100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">4900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_3500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-3500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_4000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">2600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">5400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_4000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-4000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_4500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">3100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">5900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_4500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-4500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_5000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">3600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">6400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_5000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-5000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_5500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">4100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">6900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_5500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-5500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_6000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">4600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">7400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_6000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-6000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_6500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">5100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">7900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_6500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-6500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_7000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">5600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">8400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_7000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-7000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_7500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">6100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">8900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_7500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-7500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_8000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">6600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">9400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_8000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-8000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_8500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">7100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">9900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_8500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-8500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_9000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">7600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">10400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_9000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-9000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_9500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">8100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">10900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_9500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-9500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_10000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">8600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">11400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_10000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-10000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_10500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">9100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">11900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_10500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-10500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_11000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">9600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">12400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_11000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-11000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_11500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">10100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">12900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_11500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-11500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_12000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">10600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">13400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_12000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-12000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_12500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">11100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">13900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_12500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-12500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_13000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">11600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">14400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_13000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-13000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_13500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">12100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">14900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_13500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-13500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_14000</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">12600.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">15400.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_14000</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-14000.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>altitude_14500</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">13100.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/position/altitude-ft</property>
+          <value type="double">15900.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>altitude_14500</object-name>
+    <property>/position/altitude-ft</property>
+    <bias>-14500.000000</bias>
+    <factor>  0.000333</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

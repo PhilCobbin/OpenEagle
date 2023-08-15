@@ -2,14 +2,14 @@ AC3Db
 MATERIAL "illum" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 64 trans 0.000
 OBJECT world
 name "Blender_exporter_v3.3__untitled.ac"
-kids 32
+kids 33
 
 OBJECT poly
-name "AGL_0"
+name "altitude_0"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_0.png"
+texture "numbers/altitude/altitude_0.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -36,11 +36,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_500"
+name "altitude_500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_500.png"
+texture "numbers/altitude/altitude_500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -67,11 +67,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_1000"
+name "altitude_1000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_1000.png"
+texture "numbers/altitude/altitude_1000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -98,11 +98,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_1500"
+name "altitude_1500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_1500.png"
+texture "numbers/altitude/altitude_1500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -129,11 +129,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_2000"
+name "altitude_2000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_2000.png"
+texture "numbers/altitude/altitude_2000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -160,11 +160,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_2500"
+name "altitude_2500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_2500.png"
+texture "numbers/altitude/altitude_2500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -191,11 +191,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_3000"
+name "altitude_3000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_3000.png"
+texture "numbers/altitude/altitude_3000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -222,11 +222,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_3500"
+name "altitude_3500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_3500.png"
+texture "numbers/altitude/altitude_3500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -253,11 +253,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_4000"
+name "altitude_4000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_4000.png"
+texture "numbers/altitude/altitude_4000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -284,11 +284,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_4500"
+name "altitude_4500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_4500.png"
+texture "numbers/altitude/altitude_4500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -315,11 +315,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_5000"
+name "altitude_5000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_5000.png"
+texture "numbers/altitude/altitude_5000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -346,11 +346,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_5500"
+name "altitude_5500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_5500.png"
+texture "numbers/altitude/altitude_5500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -377,11 +377,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_6000"
+name "altitude_6000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_6000.png"
+texture "numbers/altitude/altitude_6000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -408,11 +408,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_6500"
+name "altitude_6500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_6500.png"
+texture "numbers/altitude/altitude_6500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -439,11 +439,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_7000"
+name "altitude_7000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_7000.png"
+texture "numbers/altitude/altitude_7000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -470,11 +470,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_7500"
+name "altitude_7500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_7500.png"
+texture "numbers/altitude/altitude_7500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -501,11 +501,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_8000"
+name "altitude_8000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_8000.png"
+texture "numbers/altitude/altitude_8000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -532,11 +532,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_8500"
+name "altitude_8500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_8500.png"
+texture "numbers/altitude/altitude_8500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -563,11 +563,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_9000"
+name "altitude_9000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_9000.png"
+texture "numbers/altitude/altitude_9000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -594,11 +594,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_9500"
+name "altitude_9500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_9500.png"
+texture "numbers/altitude/altitude_9500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -625,11 +625,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_10000"
+name "altitude_10000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_10000.png"
+texture "numbers/altitude/altitude_10000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -656,11 +656,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_10500"
+name "altitude_10500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_10500.png"
+texture "numbers/altitude/altitude_10500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -687,11 +687,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_11000"
+name "altitude_11000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_11000.png"
+texture "numbers/altitude/altitude_11000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -718,11 +718,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_11500"
+name "altitude_11500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_11500.png"
+texture "numbers/altitude/altitude_11500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -749,11 +749,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_12000"
+name "altitude_12000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_12000.png"
+texture "numbers/altitude/altitude_12000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -780,11 +780,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_12500"
+name "altitude_12500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_12500.png"
+texture "numbers/altitude/altitude_12500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -811,11 +811,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_13000"
+name "altitude_13000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_13000.png"
+texture "numbers/altitude/altitude_13000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -842,11 +842,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_13500"
+name "altitude_13500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_13500.png"
+texture "numbers/altitude/altitude_13500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -873,11 +873,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_14000"
+name "altitude_14000"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_14000.png"
+texture "numbers/altitude/altitude_14000.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -904,11 +904,11 @@ refs 4
 kids 0
 
 OBJECT poly
-name "AGL_14500"
+name "altitude_14500"
 data 15
 a.mesh
 crease 45.0
-texture "numbers/AGL/AGL_14500.png"
+texture "numbers/altitude/altitude_14500.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897
@@ -939,7 +939,38 @@ name "reticle"
 data 15
 a.mesh
 crease 45.0
-texture "reticle/AGL/reticle.png"
+texture "reticle/altitude/reticle.png"
+texrep 1 1
+numvert 6
+0.00001   0.201867  -0.042897
+0.00001  -0.201867  -0.042897
+0.00001  -0.201867   0.0428971
+0.00001   0.201867   0.042897
+0.00001 -0   0.042897
+0.00001 0  -0.042897
+numsurf 2
+SURF 0X0
+mat 0
+refs 4
+0 0.998047 1
+3 0 1
+4 0 0.5
+5 0.998047 0.5
+SURF 0X0
+mat 0
+refs 4
+1 0.998047 0
+5 0.998047 0.5
+4 0 0.5
+2 0 0
+kids 0
+
+OBJECT poly
+name "bug"
+data 15
+a.mesh
+crease 45.0
+texture "bug/altitude/bug.png"
 texrep 1 1
 numvert 6
 0.00001   0.201867  -0.042897
@@ -970,7 +1001,7 @@ name "scale"
 data 15
 a.mesh
 crease 45.0
-texture "scale/AGL/scale.png"
+texture "scale/altitude/scale.png"
 texrep 1 1
 numvert 6
 0   0.201867  -0.042897

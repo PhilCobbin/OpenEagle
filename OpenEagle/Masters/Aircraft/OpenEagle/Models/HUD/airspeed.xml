@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <path>airspeed.ac</path>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>scale</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>0</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_0</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">-22.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 22.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_0</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>  0.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_10</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">-12.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 32.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_10</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-10.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_20</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> -2.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 42.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_20</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-20.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_30</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">  8.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 52.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_30</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-30.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_40</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 18.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 62.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_40</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-40.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_50</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 28.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 72.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_50</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-50.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_60</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 38.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 82.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_60</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-60.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_70</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 48.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 92.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_70</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-70.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_80</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 58.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">102.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_80</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-80.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_90</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 68.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">112.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_90</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-90.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_100</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 78.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">122.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_100</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-100.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_110</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 88.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">132.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_110</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-110.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_120</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double"> 98.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">142.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_120</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-120.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_130</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">108.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">152.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_130</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-130.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_140</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">118.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">162.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_140</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-140.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_150</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">128.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">172.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_150</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-150.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_160</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">138.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">182.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_160</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-160.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_170</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">148.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">192.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_170</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-170.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_180</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">158.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">202.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_180</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-180.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_190</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">168.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">212.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_190</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-190.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>airspeed_200</object-name>
+    <condition>
+      <and>
+        <greater-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">178.000000</value>
+        </greater-than-equals>
+        <less-than-equals>
+          <property>/velocities/airspeed-kt</property>
+          <value type="double">222.000000</value>
+        </less-than-equals>
+      </and>
+    </condition>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>airspeed_200</object-name>
+    <property>/velocities/airspeed-kt</property>
+    <bias>-200.000000</bias>
+    <factor>  0.020000</factor>
+    <step>0</step>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>
